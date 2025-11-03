@@ -6,7 +6,10 @@
 // More we see a prompt, better we know its distribution (less variance)
 
 import { z } from "npm:zod";
-import { chatJSON } from "./callOllama.ts";
+import { chatJSON, LLMConfig } from "./callOllama.ts";
+import { LLM } from "@langchain/core/language_models/llms";
+import { LLMChain } from "langchain/chains";
+import { LLMChainExtractor } from "langchain/retrievers/document_compressors/chain_extract";
 
 export type Prompt = { id: string; instruction: string };
 export type BestPrompts = { best: Prompt; score: number; tokens: number };
@@ -37,7 +40,7 @@ function randint(n: number) {
 // Create a single mutation of a prompt
 const MutSchema = z.object({ instruction: z.string().min(8).max(8000) });
 export async function mutateOnce(
-  model: string,
+  config: LLMConfig,
   parent: string,
   meter: TokenMeter,
   guidance = "Rewrite to be clearer, shorter, and enforce returning ONLY valid JSON."
@@ -49,7 +52,7 @@ export async function mutateOnce(
     `Rewrite the instruction below. Keep the same JSON schema.\n---\n${parent}\n---\n` +
     `Return JSON: {"instruction":"<rewritten>"}`;
   const { data, tokens } = await chatJSON(
-    model,
+    config,
     [
       { role: "system", content: system },
       { role: "user", content: user },
@@ -64,12 +67,12 @@ export async function mutateOnce(
 // Normal Inverse Gamma = mean, variance prior/posterior
 // Prior and posterior are conjugate this means we can simply update hyperparameters as we see data
 // If they were'nt conjugate this would mean we would need to approximate the posterior to update it
-type Posterior = { 
+type Posterior = {
     mu: number; // mean
     kappa: number; // inverse spread of mean
     alpha: number; // variance shape
     beta: number;  // variance scale
-}; 
+};
 
 // Sample from normal and inverse gamma distributions
 // mean is derived from variance's stddev
@@ -102,7 +105,7 @@ function invGamma(alpha: number, beta: number) {
 }
 
 export type TSOptions<E> = {
-  model: string;
+  config: LLMConfig;
   seeds: string[]; // at least one base instruction
   data: E[];
   evalExample: EvalExample<E>;
@@ -112,7 +115,7 @@ export type TSOptions<E> = {
 };
 
 export async function tsOptimize<E>(opts: TSOptions<E>) {
-  const { model, seeds, data, evalExample, budget, extraArms = 3 } = opts;
+  const { config, seeds, data, evalExample, budget, extraArms = 3 } = opts;
   const prior: Posterior = opts.prior ?? {
     mu: 0.5, // prior mean score
     kappa: 1e-3, // prior strength
@@ -129,7 +132,7 @@ export async function tsOptimize<E>(opts: TSOptions<E>) {
   // Create extra mutated arms
   for (let i = 0; i < extraArms; i++) {
     const base = arms[0].instruction;
-    const { instruction } = await mutateOnce(model, base, meter);
+    const { instruction } = await mutateOnce(config, base, meter);
     if (!meter.can(budget)) break;
     arms.push({ id: uuid(), instruction });
   }

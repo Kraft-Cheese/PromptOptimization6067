@@ -1,7 +1,7 @@
 // Binary Tournament Evolution
 
 import { z } from "npm:zod";
-import { chatJSON } from "./callOllama.ts";
+import { chatJSON, LLMConfig } from "./callOllama.ts";
 
 export type Prompt = { id: string; instruction: string };
 export type BestPrompt = { best: Prompt; score: number; tokens: number };
@@ -23,14 +23,14 @@ function pick<T>(xs: T[]) { return xs[Math.floor(Math.random() * xs.length)]; }
 const MutSchema = z.object({ instruction: z.string().min(8).max(8000) });
 
 export type Mutator = (
-  model: string,
+  config: LLMConfig,
   parentInstruction: string,
   meter: TokenMeter
 ) => Promise<{ instruction: string; tokens: number }>;
 
 // Create a mutator using meta prompting
 function makeMutator(title: string, guidance: string): Mutator {
-  return async (model, parent, meter) => {
+  return async (config, parent, meter) => {
     const system =
       "You rewrite prompts. Preserve intent and output schema. Apply the guidance. No examples; be concise.";
     const user =
@@ -38,7 +38,7 @@ function makeMutator(title: string, guidance: string): Mutator {
       `Rewrite the instruction below. Keep the same JSON schema and constraints.\n---\n${parent}\n---\n` +
       `Return JSON: {"instruction":"<rewritten>"}`;
     const { data, tokens } = await chatJSON(
-      model,
+      config,
       [{ role: "system", content: system }, { role: "user", content: user }],
       MutSchema
     );
@@ -59,7 +59,7 @@ export const DEFAULT_MUTATORS: Mutator[] = [
 type FitnessCacheKey = string;
 
 export type EvoOptions<E> = {
-  model: string;
+  config: LLMConfig;
   seeds: string[]; // Original prompts to evolve from
   data: E[]; // Eval examples for: PIQA, HellaSwag, BoolQ, GSM8K
   evalExample: EvalExample<E>;
@@ -68,7 +68,7 @@ export type EvoOptions<E> = {
 };
 
 export async function evoOptimize<E>(opts: EvoOptions<E>) {
-  const { model, seeds, data, evalExample, budget, mutators = DEFAULT_MUTATORS } = opts;
+  const { config, seeds, data, evalExample, budget, mutators = DEFAULT_MUTATORS } = opts;
   const meter = new TokenMeter();
 
   // Initialize set of prompts
@@ -114,7 +114,7 @@ export async function evoOptimize<E>(opts: EvoOptions<E>) {
 
     // replace the loser with a mutated child of the winner
     const mut = pick(mutators);
-    const { instruction: childInst } = await mut(model, winner.instruction, meter);
+    const { instruction: childInst } = await mut(config, winner.instruction, meter);
     if (!meter.can(budget)) break;
 
     // Create child prompt with new uuid and replace in population
