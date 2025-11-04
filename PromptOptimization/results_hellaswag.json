@@ -1,0 +1,259 @@
+{
+  "dataset": "hellaswag",
+  "numExamples": 30,
+  "baseInstruction": "You are a commonsense reasoning classifier. Read the context and determine which ending makes most sense. Return ONLY valid JSON: {\"label\": \"A|B|C|D\"}.",
+  "config": {
+    "provider": "ollama",
+    "model": "qwen3:8b",
+    "budget": 5000,
+    "useDummyEval": false
+  },
+  "ape": {
+    "bestPrompts": [
+      {
+        "best": {
+          "id": "0534f0b5-5976-4e93-9ad1-703115b48b2e",
+          "instruction": "{\"instruction\": \"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+        },
+        "score": 0.5333333333333333,
+        "tokens": 31990
+      }
+    ],
+    "best": {
+      "id": "0534f0b5-5976-4e93-9ad1-703115b48b2e",
+      "instruction": "{\"instruction\": \"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+    }
+  },
+  "evo": {
+    "bestPrompts": [
+      {
+        "best": {
+          "id": "8b02ba30-e589-47d1-93cb-530718a43067",
+          "instruction": "You are a commonsense reasoning classifier. Read the context and determine which ending makes most sense. Return ONLY valid JSON: {\"label\": \"A|B|C|D\"}."
+        },
+        "score": 0.4666666666666667,
+        "tokens": 5049
+      }
+    ],
+    "best": {
+      "id": "8b02ba30-e589-47d1-93cb-530718a43067",
+      "instruction": "You are a commonsense reasoning classifier. Read the context and determine which ending makes most sense. Return ONLY valid JSON: {\"label\": \"A|B|C|D\"}."
+    }
+  },
+  "ts": {
+    "bestPrompts": [
+      {
+        "best": {
+          "id": "1c6ab46d-3e9e-4c55-a956-e4946f3a199f",
+          "instruction": "You are a commonsense reasoning classifier. Read the context and determine which ending makes most sense. Return ONLY valid JSON: {\"label\": \"A|B|C|D\"}."
+        },
+        "score": 0.5,
+        "tokens": 460
+      },
+      {
+        "best": {
+          "id": "1c6ab46d-3e9e-4c55-a956-e4946f3a199f",
+          "instruction": "You are a commonsense reasoning classifier. Read the context and determine which ending makes most sense. Return ONLY valid JSON: {\"label\": \"A|B|C|D\"}."
+        },
+        "score": 0.5,
+        "tokens": 630
+      },
+      {
+        "best": {
+          "id": "1c6ab46d-3e9e-4c55-a956-e4946f3a199f",
+          "instruction": "You are a commonsense reasoning classifier. Read the context and determine which ending makes most sense. Return ONLY valid JSON: {\"label\": \"A|B|C|D\"}."
+        },
+        "score": 0.5,
+        "tokens": 841
+      },
+      {
+        "best": {
+          "id": "8e1542cc-3e0b-4eeb-a2c7-304010f96ad5",
+          "instruction": "{\"instruction\":\"Classify the given context by choosing the most sensible ending among options A, B, C, or D. Return only valid JSON: {\\\"label\\\": \\\"A|B|C|D\\\"}.\"}"
+        },
+        "score": 0.5,
+        "tokens": 1015
+      },
+      {
+        "best": {
+          "id": "8e1542cc-3e0b-4eeb-a2c7-304010f96ad5",
+          "instruction": "{\"instruction\":\"Classify the given context by choosing the most sensible ending among options A, B, C, or D. Return only valid JSON: {\\\"label\\\": \\\"A|B|C|D\\\"}.\"}"
+        },
+        "score": 0.0004995004995004996,
+        "tokens": 1192
+      },
+      {
+        "best": {
+          "id": "8e1542cc-3e0b-4eeb-a2c7-304010f96ad5",
+          "instruction": "{\"instruction\":\"Classify the given context by choosing the most sensible ending among options A, B, C, or D. Return only valid JSON: {\\\"label\\\": \\\"A|B|C|D\\\"}.\"}"
+        },
+        "score": 0.0004995004995004996,
+        "tokens": 1335
+      },
+      {
+        "best": {
+          "id": "8e1542cc-3e0b-4eeb-a2c7-304010f96ad5",
+          "instruction": "{\"instruction\":\"Classify the given context by choosing the most sensible ending among options A, B, C, or D. Return only valid JSON: {\\\"label\\\": \\\"A|B|C|D\\\"}.\"}"
+        },
+        "score": 0.0004995004995004996,
+        "tokens": 1523
+      },
+      {
+        "best": {
+          "id": "8e1542cc-3e0b-4eeb-a2c7-304010f96ad5",
+          "instruction": "{\"instruction\":\"Classify the given context by choosing the most sensible ending among options A, B, C, or D. Return only valid JSON: {\\\"label\\\": \\\"A|B|C|D\\\"}.\"}"
+        },
+        "score": 0.0004995004995004996,
+        "tokens": 1781
+      },
+      {
+        "best": {
+          "id": "8e1542cc-3e0b-4eeb-a2c7-304010f96ad5",
+          "instruction": "{\"instruction\":\"Classify the given context by choosing the most sensible ending among options A, B, C, or D. Return only valid JSON: {\\\"label\\\": \\\"A|B|C|D\\\"}.\"}"
+        },
+        "score": 0.0004995004995004996,
+        "tokens": 1990
+      },
+      {
+        "best": {
+          "id": "8e1542cc-3e0b-4eeb-a2c7-304010f96ad5",
+          "instruction": "{\"instruction\":\"Classify the given context by choosing the most sensible ending among options A, B, C, or D. Return only valid JSON: {\\\"label\\\": \\\"A|B|C|D\\\"}.\"}"
+        },
+        "score": 0.0004995004995004996,
+        "tokens": 2256
+      },
+      {
+        "best": {
+          "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+        },
+        "score": 0.33338887037654114,
+        "tokens": 2394
+      },
+      {
+        "best": {
+          "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+        },
+        "score": 0.25006248437890527,
+        "tokens": 2717
+      },
+      {
+        "best": {
+          "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+        },
+        "score": 0.25006248437890527,
+        "tokens": 2976
+      },
+      {
+        "best": {
+          "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+        },
+        "score": 0.25006248437890527,
+        "tokens": 3138
+      },
+      {
+        "best": {
+          "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+        },
+        "score": 0.40001999600079985,
+        "tokens": 3259
+      },
+      {
+        "best": {
+          "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+        },
+        "score": 0.40001999600079985,
+        "tokens": 3424
+      },
+      {
+        "best": {
+          "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+        },
+        "score": 0.40001999600079985,
+        "tokens": 3595
+      },
+      {
+        "best": {
+          "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+        },
+        "score": 0.40001999600079985,
+        "tokens": 3788
+      },
+      {
+        "best": {
+          "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+        },
+        "score": 0.40001999600079985,
+        "tokens": 3975
+      },
+      {
+        "best": {
+          "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+        },
+        "score": 0.40001999600079985,
+        "tokens": 4098
+      },
+      {
+        "best": {
+          "id": "59966ac8-a4e2-4098-86c2-e629212b5d48",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C, or D based on commonsense reasoning.\"}"
+        },
+        "score": 0.4285816311955435,
+        "tokens": 4221
+      },
+      {
+        "best": {
+          "id": "59966ac8-a4e2-4098-86c2-e629212b5d48",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C, or D based on commonsense reasoning.\"}"
+        },
+        "score": 0.4285816311955435,
+        "tokens": 4348
+      },
+      {
+        "best": {
+          "id": "59966ac8-a4e2-4098-86c2-e629212b5d48",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C, or D based on commonsense reasoning.\"}"
+        },
+        "score": 0.5,
+        "tokens": 4488
+      },
+      {
+        "best": {
+          "id": "59966ac8-a4e2-4098-86c2-e629212b5d48",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C, or D based on commonsense reasoning.\"}"
+        },
+        "score": 0.44445061659815577,
+        "tokens": 4722
+      },
+      {
+        "best": {
+          "id": "59966ac8-a4e2-4098-86c2-e629212b5d48",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C, or D based on commonsense reasoning.\"}"
+        },
+        "score": 0.44445061659815577,
+        "tokens": 4910
+      },
+      {
+        "best": {
+          "id": "59966ac8-a4e2-4098-86c2-e629212b5d48",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C, or D based on commonsense reasoning.\"}"
+        },
+        "score": 0.5,
+        "tokens": 5033
+      }
+    ],
+    "best": {
+      "id": "59966ac8-a4e2-4098-86c2-e629212b5d48",
+      "instruction": "{\"instruction\":\"Classify the given context as A, B, C, or D based on commonsense reasoning.\"}"
+    }
+  }
+}

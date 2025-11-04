@@ -1,7 +1,7 @@
 // Binary Tournament Evolution
 
 import { z } from "npm:zod";
-import { chatJSON, LLMConfig } from "./callOllama.ts";
+import { chatText, LLMConfig } from "./callOllama.ts";
 
 export type Prompt = { id: string; instruction: string };
 export type BestPrompt = { best: Prompt; score: number; tokens: number };
@@ -19,6 +19,7 @@ export class TokenMeter {
 function uuid() { return crypto.randomUUID(); }
 function pick<T>(xs: T[]) { return xs[Math.floor(Math.random() * xs.length)]; }
 
+const mutatorStats = new Map<string, { uses: number; improvements: number }>();
 // ---- Mutators (LLM rewrites of the instruction) ----
 const MutSchema = z.object({ instruction: z.string().min(8).max(8000) });
 
@@ -37,14 +38,13 @@ function makeMutator(title: string, guidance: string): Mutator {
       `GUIDANCE: ${guidance}\n` +
       `Rewrite the instruction below. Keep the same JSON schema and constraints.\n---\n${parent}\n---\n` +
       `Return JSON: {"instruction":"<rewritten>"}`;
-    const { data, tokens } = await chatJSON(
+    const { response, tokens } = await chatText(
       config,
-      [{ role: "system", content: system }, { role: "user", content: user }],
-      MutSchema
+      [{ role: "system", content: system }, { role: "user", content: user }]
     );
-    const out = data?.instruction?.trim() || parent;
+    const instruction = response.trim() || parent;
     meter.add(tokens ?? 0);
-    return { instruction: out, tokens: tokens ?? 0 };
+    return { instruction, tokens: tokens ?? 0 };
   };
 }
 
@@ -54,6 +54,14 @@ export const DEFAULT_MUTATORS: Mutator[] = [
   makeMutator("tie_break", "If multiple labels seem plausible, choose the MOST SPECIFIC according to the class set."),
   makeMutator("cautious", "Prefer safety and common-sense plausibility when unsure."),
   makeMutator("reason_silent", "Think step-by-step INTERNALLY and NEVER reveal your reasoning."),
+  makeMutator("concise", "Make the instruction shorter and more direct while preserving all constraints."),
+  makeMutator("specific", "Add specific details and examples to clarify what's expected."),
+  makeMutator("step_by_step", "Add explicit step-by-step guidance for solving the task."),
+  makeMutator("error_prevention", "Add warnings about common mistakes and how to avoid them."),
+  makeMutator("confidence", "Add guidance about expressing certainty levels in ambiguous cases."),
+  makeMutator("edge_cases", "Add handling for edge cases and unusual inputs."),
+  makeMutator("clarity", "Rephrase for maximum clarity and reduce ambiguity."),
+  makeMutator("authoritative", "Rewrite with a more authoritative and expert tone."),
 ];
 
 type FitnessCacheKey = string;
@@ -70,6 +78,11 @@ export type EvoOptions<E> = {
 export async function evoOptimize<E>(opts: EvoOptions<E>) {
   const { config, seeds, data, evalExample, budget, mutators = DEFAULT_MUTATORS } = opts;
   const meter = new TokenMeter();
+
+  const mutatorStats = new Map<string, { uses: number; improvements: number }>();
+  for (let i = 0; i < mutators.length; i++) {
+    mutatorStats.set(`mutator_${i}`, { uses: 0, improvements: 0 });
+  }
 
   // Initialize set of prompts
   const pop: Prompt[] = (seeds.length ? seeds : ['Return only {"label":"A|B"}'])
@@ -112,8 +125,14 @@ export async function evoOptimize<E>(opts: EvoOptions<E>) {
     const winner = fa >= fb ? a : b;
     const loserIdx = pop.findIndex(x => x.id === (fa >= fb ? b.id : a.id));
 
+    const mutatorIdx = Math.floor(Math.random() * mutators.length);
+    const mut = mutators[mutatorIdx];
+    const mutKey = `mutator_${mutatorIdx}`;
+    const stats = mutatorStats.get(mutKey)!;
+    stats.uses++;
+
     // replace the loser with a mutated child of the winner
-    const mut = pick(mutators);
+    // const mut = pick(mutators);
     const { instruction: childInst } = await mut(config, winner.instruction, meter);
     if (!meter.can(budget)) break;
 
@@ -125,8 +144,22 @@ export async function evoOptimize<E>(opts: EvoOptions<E>) {
     const sChild = await fitness(child);
     if (!meter.can(budget)) break;
 
-    if (sChild > bestScore) { best = child; bestScore = sChild; }
+    if (sChild > bestScore) { 
+        best = child; 
+        bestScore = sChild; 
+        stats.improvements++;
+        if (globalThis.Deno?.env?.get("DEBUG")) {
+        console.log(`\nImprovement from ${mutKey}: ${bestScore.toFixed(3)}`);
+        }
+    }
     bestPrompts.push({ best, score: bestScore, tokens: meter.snapshot() });
+  }
+
+  if (globalThis.Deno?.env?.get("DEBUG")) {
+    mutatorStats.forEach((stats, key) => {
+      const successRate = stats.uses > 0 ? (stats.improvements / stats.uses * 100).toFixed(1) : "0.0";
+      console.log(`${key}: ${stats.uses} uses, ${stats.improvements} improvements (${successRate}%)`);
+    });
   }
 
   return { best, bestPrompts, meter };

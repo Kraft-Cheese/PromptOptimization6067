@@ -1,19 +1,15 @@
 import { z } from "npm:zod";
-import { chatJSON, LLMConfig } from "./callOllama.ts";
+import { LLMConfig } from "./callOllama.ts";
 import type { MCExample, BoolQExample, GSM8KExample } from "./datasets.ts";
 import type { EvalExample } from "./ape.ts";
 
-// Multiple choice evals for PiQA and HellaSwag
-const AB = z.object({ label: z.enum(["A", "B"]) });
-const ABCD = z.object({ label: z.enum(["A", "B", "C", "D"]) });
+import { chatText} from "./callOllama.ts";
 
 // For 2 or 4 choice multiple choice tasks
 export function makeMCEvaluator(
   config: LLMConfig,
   numChoices: 2 | 4 = 2
 ): EvalExample<MCExample> {
-  const schema = numChoices === 2 ? AB : ABCD;
-
   return async (instruction: string, ex: MCExample) => {
     const choiceLabels = numChoices === 2 ? ['A', 'B'] : ['A', 'B', 'C', 'D'];
     const optionsText = ex.choices
@@ -24,19 +20,30 @@ export function makeMCEvaluator(
     const user =
       `Question: ${ex.question}\n\n` +
       `Options:\n${optionsText}\n\n` +
-      `Return JSON: {"label": "${choiceLabels.join('|')}"}`;
+      `Respond with ONLY the letter of the correct answer (${choiceLabels.join(' or ')}). No explanation.`;
 
-    const { data, tokens } = await chatJSON(
+    const { response, tokens } = await chatText(
       config,
       [
         { role: "system", content: instruction },
         { role: "user", content: user }
-      ],
-      schema
+      ]
     );
 
-    const predicted = data?.label ?? null;
+    // Extract first uppercase letter from response
+    const match = response.match(/[A-D]/);
+    const predicted = match ? match[0] : null;
+    
     const score = predicted === ex.correct ? 1.0 : 0.0;
+
+    if (globalThis.Deno?.env?.get("DEBUG")) {
+      console.log("\n--- DEBUG ---");
+      console.log("Question:", ex.question.slice(0, 60));
+      console.log("Correct:", ex.correct);
+      console.log("Response:", response.trim());
+      console.log("Predicted:", predicted);
+      console.log("Match:", score === 1.0);
+    }
 
     return { score, tokens };
   };
@@ -51,64 +58,76 @@ export function makeHellaSwagEvaluator(config: LLMConfig): EvalExample<MCExample
   return makeMCEvaluator(config, 4);
 }
 
-// Boolean evaluator
-const YesNo = z.object({ answer: z.enum(["yes", "no"]) });
-
-// Issue yes/no answers for BoolQ
+// Boolean evaluator for BoolQ
 export function makeBoolQEvaluator(config: LLMConfig): EvalExample<BoolQExample> {
   return async (instruction: string, ex: BoolQExample) => {
     const user =
       `Passage: ${ex.passage}\n\n` +
       `Question: ${ex.question}\n\n` +
-      `Return JSON: {"answer": "yes"} or {"answer": "no"}`;
+      `Respond with ONLY "yes" or "no". No explanation.`;
 
-    const { data, tokens } = await chatJSON(
+    const { response, tokens } = await chatText(
       config,
       [
         { role: "system", content: instruction },
         { role: "user", content: user }
-      ],
-      YesNo
+      ]
     );
 
-    const predicted = data?.answer;
+    const cleaned = response.trim().toLowerCase();
+    const predicted = cleaned.includes('yes') ? 'yes' : 
+                     cleaned.includes('no') ? 'no' : null;
+    
     const goldAnswer = ex.answer ? "yes" : "no";
     const score = predicted === goldAnswer ? 1.0 : 0.0;
+
+    if (globalThis.Deno?.env?.get("DEBUG")) {
+      console.log("\n--- DEBUG ---");
+      console.log("Question:", ex.question.slice(0, 60));
+      console.log("Correct:", goldAnswer);
+      console.log("Response:", response.trim());
+      console.log("Predicted:", predicted);
+      console.log("Match:", score === 1.0);
+    }
 
     return { score, tokens };
   };
 }
 
-// For GSM8K as it is numeric answer
-const NumericAnswer = z.object({
-  answer: z.number(),
-  reasoning: z.string().optional()
-});
-
 // Numeric answer evaluator for GSM8K
 export function makeGSM8KEvaluator(config: LLMConfig): EvalExample<GSM8KExample> {
   return async (instruction: string, ex: GSM8KExample) => {
     const user =
-      `Problem: ${ex.question}\n\n` +
-      `Return JSON: {"answer": <number>, "reasoning": "<optional>"}`;
+      `${ex.question}\n\n` +
+      `Respond with ONLY the final numerical answer. No explanation.`;
 
-    const { data, tokens } = await chatJSON(
+    const { response, tokens } = await chatText(
       config,
       [
         { role: "system", content: instruction },
         { role: "user", content: user }
-      ],
-      NumericAnswer
+      ]
     );
 
-    const predicted = data?.answer ?? null;
-
+    // Extract last number from response
+    const numbers = response.match(/-?\d+\.?\d*/g);
+    const predicted = numbers ? parseFloat(numbers[numbers.length - 1]) : null;
+    
     // Floating point tolerance
     const tolerance = 0.01;
     const score =
       predicted !== null && Math.abs(predicted - ex.answer) < tolerance
         ? 1.0
         : 0.0;
+
+    if (globalThis.Deno?.env?.get("DEBUG")) {
+      console.log("\n--- DEBUG ---");
+      console.log("Question:", ex.question.slice(0, 60));
+      console.log("Correct:", ex.answer);
+      console.log("Response:", response.trim());
+      console.log("Predicted:", predicted);
+      console.log("Match:", score === 1.0);
+    }
 
     return { score, tokens };
   };
@@ -188,7 +207,7 @@ export async function safeOptimize<T>(
   optimizeFn: () => Promise<T>
 ): Promise<T | null> {
   try {
-    console.log(`\nStarting ${name}...`);
+    console.log(`\nStarting ${name}`);
     const result = await optimizeFn();
     console.log(`${name} completed successfully`);
     return result;

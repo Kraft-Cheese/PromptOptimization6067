@@ -1,0 +1,602 @@
+[
+  {
+    "goal": "How do I ready a guinea pig cage for it's new occupants?",
+    "sol1": "Provide the guinea pig with a cage full of a few inches of bedding made of ripped paper strips, you will also need to supply it with a water bottle and a food dish.",
+    "sol2": "Provide the guinea pig with a cage full of a few inches of bedding made of ripped jeans material, you will also need to supply it with a water bottle and a food dish.",
+    "label": "0"
+  },
+  {
+    "goal": "dresser",
+    "sol1": "replace drawer with bobby pin ",
+    "sol2": "finish, woodgrain with  bobby pin ",
+    "label": "1"
+  },
+  {
+    "goal": "To fight Ivan Drago in Rocky for sega master system.",
+    "sol1": "Drago isn't in this game because it was released before Rocky IV.",
+    "sol2": "You have to defeat Apollo Creed and Clubber Lang first.",
+    "label": "1"
+  },
+  {
+    "goal": "Make outdoor pillow.",
+    "sol1": "Blow into tin can and tie with rubber band.",
+    "sol2": "Blow into trash bag and tie with rubber band.",
+    "label": "1"
+  },
+  {
+    "goal": "ice box",
+    "sol1": "will turn into a cooler if you add water to it",
+    "sol2": "will turn into a cooler if you add soda to it",
+    "label": "0"
+  },
+  {
+    "goal": "Remove soap scum from shower door.",
+    "sol1": "Rub hard with bed sheets, then rinse.",
+    "sol2": "Rub hard with dryer sheets, then rinse.",
+    "label": "1"
+  },
+  {
+    "goal": "Recycle a spray bottle for a new cleaner.",
+    "sol1": "Open the top of the empty spray bottle and check for damage. Rinse the bottle then fill halfway with warm water. Replace the spray nozzle and pump a few times to clear the hose. Empty sparrow bottle and allow to dry before using with a new cleaner.",
+    "sol2": "Open the top of the empty spray bottle and check for damage. Rinse the bottle then fill halfway with warm water. Replace the spray nozzle and pump a few times to clear the hose. Empty spray bottle and allow to dry before using with a new cleaner.",
+    "label": "1"
+  },
+  {
+    "goal": "How do you attach toilet paper to a glass jar?",
+    "sol1": "Press a piece of double-sided tape to the glass jar and then press the toilet paper onto the tape.",
+    "sol2": "Spread mayonnaise all over the jar with your palms and then roll the jar in toilet paper.",
+    "label": "0"
+  },
+  {
+    "goal": "How to make tissue paper window decorations?",
+    "sol1": "Find tissue paper and fold it in half. Take scissors and cut out pieces of the paper in the middle. When you are done tape it to your window.",
+    "sol2": "Find tissue paper and fold it in half. Take scissors and tear out pieces of the paper in the middle. When you are done tape it to your window.",
+    "label": "0"
+  },
+  {
+    "goal": "Neatly wrap up an extension cord.",
+    "sol1": "Wrap the cord around your hand and elbow.",
+    "sol2": "Wrap the cord around your hand and knee.",
+    "label": "0"
+  },
+  {
+    "goal": "Extend life of flowers in vase.",
+    "sol1": "Add small amount of coffee in vase.",
+    "sol2": "Add small amount of 7UP in vase.",
+    "label": "1"
+  },
+  {
+    "goal": "how do you put eyelashes on?",
+    "sol1": "glue them on with mascara.",
+    "sol2": "put eyelash glue on the fake eyelashes and then let it get tacky. then, place it on top of your actual eyelashes and let it dry on.",
+    "label": "1"
+  },
+  {
+    "goal": "Find spices easily in the kitchen.",
+    "sol1": "Arrange spices from hot to mild in the kitchen in order to find them by taste.",
+    "sol2": "Arrange your spices alphabetically to make finding them easy.",
+    "label": "1"
+  },
+  {
+    "goal": "peeler",
+    "sol1": "can be used as a decoration on a television ",
+    "sol2": "can be used as a decoration on a sock ",
+    "label": "0"
+  },
+  {
+    "goal": "How to clean blinds without tearing them up",
+    "sol1": "Place a cloth on each side of a pair of tongs.",
+    "sol2": "Find a feather duster, and cut the feathers off every two inches.",
+    "label": "0"
+  },
+  {
+    "goal": "What material is a steel rocking chair made out of?",
+    "sol1": "The frame is steel and then fabric can be added if you wish.",
+    "sol2": "The frame is plastic and fabric can be added if you wish",
+    "label": "0"
+  },
+  {
+    "goal": "To get a video game console for a cheap price,",
+    "sol1": "look for the console on a website that sells used goods.",
+    "sol2": "look up which console is the cheapest one in store.",
+    "label": "0"
+  },
+  {
+    "goal": "How do you properly prepare a steak.",
+    "sol1": "Take the steak out of warm storage and let come to room temperature, generously add salt and pepper to both sides and let sit for 10 minutes.",
+    "sol2": "Take the steak out of cold storage and let come to room temperature, generously add salt and pepper to both sides and let sit for 10 minutes.",
+    "label": "1"
+  },
+  {
+    "goal": "To cream butter and sugar together, you can",
+    "sol1": "Place it in a bowl and use a hand warmer",
+    "sol2": "Place in a bowl and use a hand mixer",
+    "label": "1"
+  },
+  {
+    "goal": "How to best cut the meat to place on a grill?",
+    "sol1": "Place a knife on the grill for around 15 minutes for the blade to be red hot. Gently push the knife through the meat to get a perfect cut.",
+    "sol2": "Use a sharp knife or scissor and cut the meat properly as per the required size.",
+    "label": "1"
+  },
+  {
+    "goal": "What alcohol do you pour for a mojito?",
+    "sol1": "Fill the glass with ice cubes so it\u2019s half full. Pour in 2 shots of white rum & 1-2 shots of freshly squeezed orange juice.",
+    "sol2": "Fill the glass with ice cubes so it\u2019s all full. Pour in 2 shots of white rum & 1-2 shots of freshly squeezed orange juice.",
+    "label": "0"
+  },
+  {
+    "goal": "How to start an automatic transmission car.",
+    "sol1": "Be sure it is in park, insert key into ignition, twist ignition key to start the car, release the key right after, car is now running.",
+    "sol2": "Be sure it is in park, insert key into ignition, twist ignition key to start the car, do not release the key right after, car is now running.",
+    "label": "0"
+  },
+  {
+    "goal": "How to make sure all the clocks in the house are set accurately?",
+    "sol1": "Get a solar clock for a reference and place it just outside a window that gets lots of sun. Use a system of call and response once a month, having one person stationed at the solar clock who yells out the correct time and have another person move to each of the indoor clocks to check if they are showing the right time. Adjust as necessary.",
+    "sol2": "Replace all wind-ups with digital clocks. That way, you set them once, and that's it. Check the batteries once a year or if you notice anything looks a little off.",
+    "label": "1"
+  },
+  {
+    "goal": "How do you make plain toast?",
+    "sol1": "Gather a slice of bread and a toaster, place the bread on the top of the toaster and push the button down, when the button pops up your toast is ready.",
+    "sol2": "Gather a slice of bread and a toaster, place the bread into the toaster and push the button down, when the button pops up your toast is ready.",
+    "label": "1"
+  },
+  {
+    "goal": "Make a bulletin board.",
+    "sol1": "Glue wine corks into a picture frame.",
+    "sol2": "Glue wine bottles into a picture frame.",
+    "label": "0"
+  },
+  {
+    "goal": "How do you make raw nuts have more flavor.",
+    "sol1": "Boil the nuts in milk for about 20 minutes while stirring constantly.",
+    "sol2": "Toast the nuts in a skillet for a few minutes while stirring constantly.",
+    "label": "1"
+  },
+  {
+    "goal": "To prepare carrots before cooking with them, you can",
+    "sol1": "Run them in the sink under boiling water",
+    "sol2": "Run them in the sink under cold water",
+    "label": "1"
+  },
+  {
+    "goal": "plastic bag",
+    "sol1": "can carry foil ",
+    "sol2": "can carry pole ",
+    "label": "0"
+  },
+  {
+    "goal": "To discourage house flies from living in your home,",
+    "sol1": "keep basil plants in the kitchen or windows.",
+    "sol2": "keep lavender plants in the kitchen or window.",
+    "label": "0"
+  },
+  {
+    "goal": "How to make Caramel Chocolate chip Girl Scout Cookie Vanilla Ice cream at home.",
+    "sol1": "In a medium mixing bowl combine 7 cups chilled Caramelized Onions, 2 14 oz. cans sweetened condensed milk 1 teaspoon Vanilla extract.  Beat with an electric mixer until soft Peaks form. Stir in 1 1/2 cups Caramel Chocolate Chip Girl Scout cookies (Sliced in 3/4\" strips or crumbles)  and 1/2 cup Chocolate chips.  Transfer mixture to two 8x8x2 inch baking pans. Freeze about 8 hours until firm.",
+    "sol2": "In a medium mixing bowl combine 7 cups chilled whipping cream, 2 14 oz. cans sweetened condensed milk 1 teaspoon Vanilla extract.  Beat with an electric mixer until soft Peaks form. Stir in 1 1/2 cups Caramel Chocolate Chip Girl Scout cookies (Sliced in 3/4\" strips or crumbles)  and 1/2 cup Chocolate chips.  Transfer mixture to two 8x8x2 inch baking pans. Freeze about 8 hours until firm.",
+    "label": "1"
+  },
+  {
+    "goal": "To combine cake ingredients.",
+    "sol1": "In a large mixing bowl, combined three egg yolks and half of the white granulated sugar and whisk till it reaches a pale red berry mixture.",
+    "sol2": "In a large mixing bowl, combined three egg yolks and half of the white granulated sugar and whisk till it reaches a pale lemony yellow mixture.",
+    "label": "1"
+  },
+  {
+    "goal": "To prevent gunk buildup in cup holders of a car,",
+    "sol1": "place coffee filters inside of the cup holders.",
+    "sol2": "pour a thin layer of oil into the cup holders.",
+    "label": "0"
+  },
+  {
+    "goal": "To quarter biscuits, you can",
+    "sol1": "Take the biscuit in your mouth and tear it into quarters",
+    "sol2": "Take the biscuit in your hand and tear it into quarters",
+    "label": "1"
+  },
+  {
+    "goal": "To make a bedroom temperature colder without a fan or air conditioner,",
+    "sol1": "hang up a thick, and dark blanket over the windows and then ensure their is proper air flow in the room.",
+    "sol2": "wave a large blanket up and down to generate a gust of wind to cool the room down when it gets too hot.",
+    "label": "0"
+  },
+  {
+    "goal": "how to get fluffy cookies",
+    "sol1": "Chill cookie dough before putting it on a baking sheet. This will help prevent your butter from flattening and losing its fluffy texture.",
+    "sol2": "Chill cookie dough before putting it on a parchment line fish platter. This will help prevent your butter from flattening and losing its fluffy texture.",
+    "label": "0"
+  },
+  {
+    "goal": "How to brine a turkey before cooking?",
+    "sol1": "Boil water with spices and any adjuncts you'd like, bring the water to a cool temperature and then submerge the turkey for several hours in the cold brine",
+    "sol2": "Boil water with spices and any adjuncts you'd like, bring the water to a boiling temperature and then submerge the turkey for several hours in the hot brine",
+    "label": "0"
+  },
+  {
+    "goal": "To spare the plant while picking lettuce",
+    "sol1": "grab one leaf with one hand, bend the plant stalk near the leaf with the other hand, and pull it down and away from the leaf.",
+    "sol2": "grab one leaf with one hand, hold the stalk near the leaf with the other hand, and then pull the leaf down breaking it from the plant.",
+    "label": "1"
+  },
+  {
+    "goal": "To cook perfectly golden pancakes,",
+    "sol1": "keep the temperature high and cook quickly.",
+    "sol2": "keep the temperature low for a longer time.",
+    "label": "1"
+  },
+  {
+    "goal": "generate poetry by using random words.",
+    "sol1": "Find a bunch of letters you like, about 150 of them.  Print them on paper and cut them from one another.  Place the paper pieces in a cup.  Turn the cup upside down. Rewrite the letters you can see as words, add a few of your own and call it poetry.",
+    "sol2": "Find a bunch of words you like, about 50 of them.  Print them on paper and cut them from one another.  Place the paper pieces in a cup.  Turn the cup upside down. Rewrite the words you can see, add a few of your own and call it poetry.",
+    "label": "1"
+  },
+  {
+    "goal": "To fill a bucket with sand",
+    "sol1": "Take a smaller pail and fill it with sand. Dump it on the ground. Repeat until the bucket is full.",
+    "sol2": "Take a smaller pail and fill it with sand. Dump it into the bucket. Repeat until the bucket is full.",
+    "label": "1"
+  },
+  {
+    "goal": "To set the J bolt into the concrete mix in the mold.",
+    "sol1": "Push in the J bolt into the poured concrete mix in the mold before it cures, making sure it's straight and square.",
+    "sol2": "Push in the J bolt into the poured concrete mix in the mold after it cures, making sure it's straight and square.",
+    "label": "0"
+  },
+  {
+    "goal": "Eliminate odors in the laundry room.",
+    "sol1": "Spray dirty laundry with air freshener, and open a window to clear the room of smell.",
+    "sol2": "Combine baking soda and essential oil.  Place in an open jar in laundry room.",
+    "label": "1"
+  },
+  {
+    "goal": "How do I fill holes and tiny gaps in the concrete when making a concrete countertop?",
+    "sol1": "Use  a concrete slurry",
+    "sol2": "Use  a concrete brush",
+    "label": "0"
+  },
+  {
+    "goal": "a bucket",
+    "sol1": "can hold acid ",
+    "sol2": "can hold paint ",
+    "label": "1"
+  },
+  {
+    "goal": "When I'm deep frying a turkey, how defrosted should it be?",
+    "sol1": "It should be completely defrosted, otherwise the oil may boil over and start a fire.",
+    "sol2": "It should be completely frozen, otherwise the oil may boil over and start a fire.",
+    "label": "0"
+  },
+  {
+    "goal": "How do you remove gum from being stuck in hair?",
+    "sol1": "Apply an ice cube and gently remove the hardened gum.",
+    "sol2": "Use a blow dryer and gently remove melted gum.",
+    "label": "0"
+  },
+  {
+    "goal": "fire",
+    "sol1": "can melt humans ",
+    "sol2": "can melt water ",
+    "label": "0"
+  },
+  {
+    "goal": "How long should liquid nails dry?",
+    "sol1": "Just because liquid nails look dry in a short period of time it does not mean it is dried to maximum strength.",
+    "sol2": "Liquid nails should be adhered to surfaces for 24 hours, taking a full week to completely cure to maximum strength",
+    "label": "1"
+  },
+  {
+    "goal": "To get the best deal at amusement parks,",
+    "sol1": "buy a seasonal pass, so you can go all winter long for one discounted rate.",
+    "sol2": "buy a seasonal pass, so you can go all summer long for one discounted rate.",
+    "label": "1"
+  },
+  {
+    "goal": "One seeks to make a cord weave.",
+    "sol1": "One will need a short amount of cord.",
+    "sol2": "One will need a long amount of cord.",
+    "label": "1"
+  },
+  {
+    "goal": "To make wires look like tree branches on a wire tree.",
+    "sol1": "Bend wires grouped tightly together into loops. Use kitchen scissors to cut in the middle of the loops. Use needle nose pliers to pull strands of wires away from each other to look like branches.",
+    "sol2": "Bend wires grouped tightly together into loops. Use wire cutters to cut in the middle of the loops. Use needle nose pliers to pull strands of wires away from each other to look like branches.",
+    "label": "1"
+  },
+  {
+    "goal": "How do I remove wrinkles from a new leather jacket that has never been worn",
+    "sol1": "After taking a hot shower, hang the jacket in the bedroom closet but don't let it touch any water. The steam from the shower should help get rid of the wrinkles.",
+    "sol2": "After taking a hot shower, hang the jacket in the shower but don't let it touch any water. The steam from the shower should help get rid of the wrinkles.",
+    "label": "1"
+  },
+  {
+    "goal": "Kill fruit flies easily.",
+    "sol1": "Spray with alcohol, then sweep away.",
+    "sol2": "Spray with water, then sweep away.",
+    "label": "0"
+  },
+  {
+    "goal": "To prevent splinters from cut wood,",
+    "sol1": "use a fine grained sandpaper to sand down rough cut edges.",
+    "sol2": "use a fine grained nail file to sand down rough cut edges.",
+    "label": "0"
+  },
+  {
+    "goal": "Trim apple trees.",
+    "sol1": "Use a chainsaw to cut all the limbs off the tree.",
+    "sol2": "Get your limb trimmer out and sharpen the blades with a stone.",
+    "label": "1"
+  },
+  {
+    "goal": "How to easily form a perfectly round snowball?",
+    "sol1": "Once the basic ball is formed, heat up a hand warmer and keeping it in your hand shape a circle out of the snowball",
+    "sol2": "Before the basic ball is formed, heat up a hand warmer and keeping it in your pocket shape a circle out of the snowball",
+    "label": "0"
+  },
+  {
+    "goal": "How do I get my coffee to taste less dark?",
+    "sol1": "Add a little bit of milk or creamer to the coffee.",
+    "sol2": "Add a little bit of more coffee to the drink.",
+    "label": "0"
+  },
+  {
+    "goal": "how do you use headphones?",
+    "sol1": "plug them into your device.",
+    "sol2": "plug them into your device and then place the headphones over your head to where each side is covering your ears.",
+    "label": "1"
+  },
+  {
+    "goal": "After staining wood, you should",
+    "sol1": "Allow it to sit for several hours so the stain can dry",
+    "sol2": "Allow it to sit for several months so the stain can dry",
+    "label": "0"
+  },
+  {
+    "goal": "How to order room service",
+    "sol1": "Pick up the landline phone in your hotel room or villa. Dial the number provided for room service or zero for the operator. Order from the menu.",
+    "sol2": "Pick up the landline phone in your hotel room or village. Dial the number provided for room service or zero for the operator. Order from the menu.",
+    "label": "0"
+  },
+  {
+    "goal": "How to sneak past guards in Metal Gear NES?",
+    "sol1": "Wait until they say \"I feel asleep!\" and walk past, or wait until they face another direction.",
+    "sol2": "Wait until they say \"I'm feeling sleepy!\" and walk past, or wait until they face another direction.",
+    "label": "1"
+  },
+  {
+    "goal": "What are the benefits of anti-allergen vacuum cleaners?",
+    "sol1": "Even though they are much more expensive, anti-allergen vacuum cleaners, by preventing allergens from being present in you home, will keep your family much healthier in the long run.",
+    "sol2": "Even though they are much less expensive, anti-allergen vacuum cleaners, by preventing allergens from being present in you home, will keep your family much healthier in the long run.",
+    "label": "0"
+  },
+  {
+    "goal": "How do you make an oil and vinegar dressing?",
+    "sol1": "3 tablespoons extra virgin olive oil (or a more neutral-flavored oil like grapeseed, canola, or vegetable) 1 tablespoon white wine vinegar (or balsamic, apple cider, rice, sherry, or other wine vinegar) Pinch of kosher salt. A turn of freshly ground black pepper.",
+    "sol2": "3 tablespoons extra virgin olive oil (or a more neutral-flavored oil like grapeseed, canola, or vegetable) 1 tablespoon white wine vinegar (or balsamic, apple cider, rice, sherry, or other wine vinegar) Pinch of kosher salt. A turn of freshly ground red pepper.",
+    "label": "0"
+  },
+  {
+    "goal": "Avoid germs from hotel bed.",
+    "sol1": "Use a bed sheet under hotel bed.",
+    "sol2": "Use a bed sheet over hotel bed.",
+    "label": "1"
+  },
+  {
+    "goal": "To allow the oil for the turkey fryer to reach the correct cooking temp",
+    "sol1": "Allow approximately 40 mins for the oil to come up to the correct temperature.",
+    "sol2": "Allow approximately 4 hours for the oil to come up to the correct temperature.",
+    "label": "0"
+  },
+  {
+    "goal": "how to clean a container that held melted wax",
+    "sol1": "Heat the measuring cup so that all the wax inside is liquid. Then wipe out measuring cup with a paper towel. Repeat if necessary to get all of the wax out.",
+    "sol2": "Heat the measuring cup so that all the wax inside is liquid and rehardened. Then wipe out measuring cup with a paper towel. Repeat if necessary to get all of the wax out.",
+    "label": "0"
+  },
+  {
+    "goal": "How to light a candle with a deep seated wick?",
+    "sol1": "invert the candle upside down and pull the wick until the lighter can reach it",
+    "sol2": "invert the candle upside down and use the lighter to reach into the wick to light it",
+    "label": "1"
+  },
+  {
+    "goal": "To shape duct tape into a perfect circle.",
+    "sol1": "Use a gasket punch and a hammer.",
+    "sol2": "Use a nail and a hammer.",
+    "label": "0"
+  },
+  {
+    "goal": "What can you do when someone presses all the buttons on the elevator then gets off and you are in a hurry?",
+    "sol1": "You can avoid stopping at all the floors by pressing the ones you want to skip twice, it will avoid the stop there.",
+    "sol2": "You can avoid passing all the floors by pressing the ones you want to skip twice, it will avoid the passing of the elevator there.",
+    "label": "0"
+  },
+  {
+    "goal": "What materials are needed to hand sew an article of clothing?",
+    "sol1": "Thread, needle, scissors, material and ruler",
+    "sol2": "Thread, needle, knife, material and ruler",
+    "label": "0"
+  },
+  {
+    "goal": "To make a hard shelled taco,",
+    "sol1": "put seasoned beef, cheese, and lettuce onto the hard shell.",
+    "sol2": "put seasoned beef, cheese, and lettuce into the hard shell.",
+    "label": "1"
+  },
+  {
+    "goal": "One wants to eat Vegetarian.",
+    "sol1": "One could have Eggs Benedict.",
+    "sol2": "One could have Eggs Florentine.",
+    "label": "1"
+  },
+  {
+    "goal": "How do I find something I lost on the carpet?",
+    "sol1": "Put a solid seal on the end of your vacuum and turn it on.",
+    "sol2": "Put a hair net on the end of your vacuum and turn it on.",
+    "label": "1"
+  },
+  {
+    "goal": "To make small candles to float in water,",
+    "sol1": "rub a blue candle on a grater over an ice cube tray and fill the tray with melted candle wax, then stick a wick in each cube wrapped around a pencil, after solid pull them out.",
+    "sol2": "rub a blue candle on a grater over an ice cube tray and fill the tray with cold pressed olive oil, then stick a wick in each cube wrapped around a pencil, after solid pull them out.",
+    "label": "0"
+  },
+  {
+    "goal": "To clean your microwave without having to scrub it.",
+    "sol1": "Fill a bowl with water and microwave it for two to three minutes. The steam will loosen any dried food particles for easy cleaning.",
+    "sol2": "Fill a bowl with water and microwave it for two to three seconds. The steam will loosen any dried food particles for easy cleaning.",
+    "label": "0"
+  },
+  {
+    "goal": "To bend a PVC conduit,",
+    "sol1": "Use a heat source on the conduit. A flamethrower is recommended. Point the flamethrower  toward the spot you wand the conduit to bend and turn it on. Bend with your hands gently. Be sure to wear gloves doing so or you might be burned.",
+    "sol2": "Use a heat source on the conduit. A heat gun is recommended. Point the heat gun toward the spot you wand the conduit to bend and turn it on. Bend with your hands gently. Be sure to wear gloves doing so or you might be burned.",
+    "label": "1"
+  },
+  {
+    "goal": "Make a camping shower head.",
+    "sol1": "Attach a watering can to a large jug.",
+    "sol2": "Attach a watering can to a small jug.",
+    "label": "0"
+  },
+  {
+    "goal": "Make Halloween lanterns.",
+    "sol1": "Draw ghost faces on full milk bottles, put a candle in each one.",
+    "sol2": "Draw ghost faces on empty milk bottles, put a candle in each one.",
+    "label": "1"
+  },
+  {
+    "goal": "change a lightbulb in a ceiling fan",
+    "sol1": "Turn the switch off for the fan and light.Carefully reach up and take hold of the bulb that is blown. If it is hot because it has been on recently, use a cloth to protect your hands. Unscrew the bulb and carefully screw in a new bulb until it breaks in your hand",
+    "sol2": "Turn the switch off for the fan and light.Carefully reach up and take hold of the bulb that is blown. If it is hot because it has been on recently, use a cloth to protect your hands. Unscrew the bulb and carefully screw in a new bulb until it is tight.",
+    "label": "1"
+  },
+  {
+    "goal": "Which direction to properly install an air filter.",
+    "sol1": "Air filters can be installed in any direction.",
+    "sol2": "Pay attention to the arrow markers. These indicate which way to insert the filter into the slot.",
+    "label": "1"
+  },
+  {
+    "goal": "Protect a bare shiny piece of metal, like a hinge, from rusting.",
+    "sol1": "Use a silver spray paint to seal your fixture, or they will continue to rust and tarnish with time.",
+    "sol2": "Use a clear enamel spray to seal your fixture, or they will continue to rust and tarnish with time.",
+    "label": "1"
+  },
+  {
+    "goal": "making a picture Frame on Your Wrist",
+    "sol1": "Gather your tools and materials, cut out  a watch by taking off the side plate, Cut Foamcore to Fit, Glue on Your Design and Wear Your Watch.",
+    "sol2": "Gather your tools and materials, gut a watch by taking off the back plate, Cut Foamcore to Fit, Glue on Your Design and Wear Your Watch.",
+    "label": "1"
+  },
+  {
+    "goal": "How do you bake a cheesecake properly?",
+    "sol1": "Create a water bath by placing a 12 inch wide cake pan on the middle rack of the oven and bake for one hour in a 350 degree blender.",
+    "sol2": "Create a water bath by placing a 12 inch wide cake pan on the middle rack of the oven and bake for one hour in a 350 degree oven.",
+    "label": "1"
+  },
+  {
+    "goal": "Easy way to hang your shoes in your closet.",
+    "sol1": "Get a piece of wood and attach it about 1 foot from the floor of your closet. Add coat hooks at even intervals and hang your shoes.",
+    "sol2": "Get some coat hooks and attach it about 1 foot from the floor of your closet. Add coat hooks at even intervals and hang your shoes.",
+    "label": "0"
+  },
+  {
+    "goal": "Get cheap pizza.",
+    "sol1": "Call pizza place and ask for a discount on abandoned pizzas.",
+    "sol2": "Call pizza place and ask for a discount on incomplete cooked pizzas.",
+    "label": "0"
+  },
+  {
+    "goal": "How do you harvest honey from a bee box?",
+    "sol1": "Smoke the bees. Once they are calm, remove the frames that are completely filled with honey from the hive. Use a sharp knife to cut off the wax that caps each comb. Once the combs are all opened, you can use an extractor to drain the honey out of the comb. You can also place the frame over a bucket and let the honey drain into the bucket over a few days time.",
+    "sol2": "Smoke the bees. Once they are calm, remove the frames that are completely filled with honey from the hive. Use a sharp knife to cut off the comb from each frame. Once the combs are all opened, you can use an extractor to drain the honey out of the comb. You can also place the frame over a bucket and let the honey drain into the bucket over a few days time.",
+    "label": "0"
+  },
+  {
+    "goal": "What supplies are needed to make a  small decorative Christmas tree?",
+    "sol1": "Styrofoam cone        Mini plastic spoons        Mixed beads        One ornament star        Scissors        Hot water gun        Gold spray paint",
+    "sol2": "Styrofoam cone        Mini plastic spoons        Mixed beads        One ornament star        Scissors        Hot glue gun        Gold spray paint",
+    "label": "1"
+  },
+  {
+    "goal": "How to create Dorodango (Japanese mud-art).",
+    "sol1": "Gather dirt, wet it to make mud, and roll it into the shape of a ball, keep adding water so it will remain mud-like, add water whenever it begins to dry.",
+    "sol2": "Gather dirt, wet it to make mud, and roll it into the shape of a ball, let it sit until it dries, then buff it with a cloth.",
+    "label": "1"
+  },
+  {
+    "goal": "How to sleep in proper posture?",
+    "sol1": "Sleep straight with a pillow over your head.",
+    "sol2": "Sleep straight with a pillow under your head.",
+    "label": "1"
+  },
+  {
+    "goal": "To extend the shelf life of lettuce,",
+    "sol1": "wrap it in paper towels before storing it in a bag.",
+    "sol2": "wrap it in foil wrap instead of storing it in a bag.",
+    "label": "0"
+  },
+  {
+    "goal": "To dye the white fondant to make the fondant roses",
+    "sol1": "Dip the fondant in the food coloring and then rub in  the food coloring  then knead until the color is evenly distributed",
+    "sol2": "Dip a toothpick in the food coloring and then rub the food coloring onto the white fondant, then knead until the color is evenly distributed",
+    "label": "1"
+  },
+  {
+    "goal": "To make seed starter pots",
+    "sol1": "use balled toilet paper  with some soil and a seed",
+    "sol2": "use a toilet paper roll with some soil and a seed",
+    "label": "1"
+  },
+  {
+    "goal": "To prepare a loaf pan for Blueberry Lemon Financiers.",
+    "sol1": "Grease and flour a six-cavity mini loaf pan or a standard 12-cavity muffin pan.",
+    "sol2": "Grease and sugar a six-cavity mini loaf pan or a standard 12-cavity muffin pan.",
+    "label": "0"
+  },
+  {
+    "goal": "How can I raise and lower a picavet with a camera attached so it can be flown with a kite?",
+    "sol1": "You would implement a pulley system with wheels and strong string.",
+    "sol2": "You would implement a pulley system with carabiners and strong string.",
+    "label": "1"
+  },
+  {
+    "goal": "Increase ability to learn something new.",
+    "sol1": "Diffuse vegetable oil.",
+    "sol2": "Diffuse cinnamon essential oil.",
+    "label": "1"
+  },
+  {
+    "goal": "When building a survival fishing kit, what can you use to make fishing hooks?",
+    "sol1": "Carefully bend a safety pin into a hook shape with pliers and fasten it to a thin paracord to create a makeshift fishing line.",
+    "sol2": "Carefully bend a paper clip into a hook shape with pliers and fasten it to a thin paracord to create a makeshift fishing line.",
+    "label": "0"
+  },
+  {
+    "goal": "How can I set my umbrella up on my deck more effectively?",
+    "sol1": "Mount several sets of galvanized plumbing pipe straps on the deck posts or railing in key places. Use straps with a much narrower diameter than the umbrella pole. Then just pick a spot and slip the umbrella pole through the straps until the bottom of the pole rests on the deck.",
+    "sol2": "Mount several sets of galvanized plumbing pipe straps on the deck posts or railing in key places. Use straps with a slightly wider diameter than the umbrella pole. Then just pick a spot and slip the umbrella pole through the straps until the bottom of the pole rests on the deck.",
+    "label": "1"
+  },
+  {
+    "goal": "To remove sharpie pen from a couch,",
+    "sol1": "soak the area in soy milk so that the region is colored by it.",
+    "sol2": "soak the stained area in milk for an hour and then rub away.",
+    "label": "1"
+  },
+  {
+    "goal": "To remove folds and creases from a sewing pattern",
+    "sol1": "set a clothing iron on low and carefully iron the pattern to remove folds and creases before pinning to your fabric.",
+    "sol2": "set a clothing iron on high and carefully iron the pattern to remove folds and creases before pinning to your fabric.",
+    "label": "0"
+  },
+  {
+    "goal": "how to get perfectly done grilled meat",
+    "sol1": "move closer to the coals the longer it has been on. when almost finished, move directly on top of the coals.",
+    "sol2": "Take your meat and fish off the grill a few seconds before it's perfectly done because it cooks an extra 5\u201310 degrees when resting",
+    "label": "1"
+  }
+]

@@ -1,0 +1,307 @@
+{
+  "dataset": "piqa",
+  "numExamples": 30,
+  "baseInstruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}.",
+  "config": {
+    "provider": "ollama",
+    "model": "qwen3:8b",
+    "budget": 5000,
+    "useDummyEval": false
+  },
+  "ape": {
+    "bestPrompts": [
+      {
+        "best": {
+          "id": "f45558a8-e1a4-495d-b7b3-a583097823bb",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.7333333333333333,
+        "tokens": 27192
+      }
+    ],
+    "best": {
+      "id": "f45558a8-e1a4-495d-b7b3-a583097823bb",
+      "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+    }
+  },
+  "evo": {
+    "bestPrompts": [
+      {
+        "best": {
+          "id": "8cca7184-acea-4071-98d8-068df035645f",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.7333333333333333,
+        "tokens": 4543
+      }
+    ],
+    "best": {
+      "id": "8cca7184-acea-4071-98d8-068df035645f",
+      "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+    }
+  },
+  "ts": {
+    "bestPrompts": [
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.5,
+        "tokens": 527
+      },
+      {
+        "best": {
+          "id": "113094ff-0cd1-43f9-b4f9-8b1841788581",
+          "instruction": "{\n  \"instruction\": \"Classify physical commonsense reasoning solutions as either A or B, choosing the more practical one. Return ONLY valid JSON: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+        },
+        "score": 0.9995004995004996,
+        "tokens": 693
+      },
+      {
+        "best": {
+          "id": "113094ff-0cd1-43f9-b4f9-8b1841788581",
+          "instruction": "{\n  \"instruction\": \"Classify physical commonsense reasoning solutions as either A or B, choosing the more practical one. Return ONLY valid JSON: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+        },
+        "score": 0.5,
+        "tokens": 821
+      },
+      {
+        "best": {
+          "id": "65e396a3-018d-46e7-a8f7-dc3bcc77d295",
+          "instruction": "{\n  \"instruction\": \"Classify physical commonsense reasoning solutions as A or B, choosing the more practical one. Response format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+        },
+        "score": 0.9995004995004996,
+        "tokens": 1041
+      },
+      {
+        "best": {
+          "id": "65e396a3-018d-46e7-a8f7-dc3bcc77d295",
+          "instruction": "{\n  \"instruction\": \"Classify physical commonsense reasoning solutions as A or B, choosing the more practical one. Response format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+        },
+        "score": 0.9995004995004996,
+        "tokens": 1170
+      },
+      {
+        "best": {
+          "id": "65e396a3-018d-46e7-a8f7-dc3bcc77d295",
+          "instruction": "{\n  \"instruction\": \"Classify physical commonsense reasoning solutions as A or B, choosing the more practical one. Response format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+        },
+        "score": 0.9995004995004996,
+        "tokens": 1287
+      },
+      {
+        "best": {
+          "id": "65e396a3-018d-46e7-a8f7-dc3bcc77d295",
+          "instruction": "{\n  \"instruction\": \"Classify physical commonsense reasoning solutions as A or B, choosing the more practical one. Response format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+        },
+        "score": 0.9995004995004996,
+        "tokens": 1389
+      },
+      {
+        "best": {
+          "id": "c069fe97-1e92-42b6-a9eb-63be32b04c66",
+          "instruction": "{\n  \"instruction\": \"Classify physical common sense reasoning options, choosing the more practical one. Respond in JSON format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+        },
+        "score": 0.9997501249375311,
+        "tokens": 1538
+      },
+      {
+        "best": {
+          "id": "c069fe97-1e92-42b6-a9eb-63be32b04c66",
+          "instruction": "{\n  \"instruction\": \"Classify physical common sense reasoning options, choosing the more practical one. Respond in JSON format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+        },
+        "score": 0.9997501249375311,
+        "tokens": 1759
+      },
+      {
+        "best": {
+          "id": "c069fe97-1e92-42b6-a9eb-63be32b04c66",
+          "instruction": "{\n  \"instruction\": \"Classify physical common sense reasoning options, choosing the more practical one. Respond in JSON format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+        },
+        "score": 0.9997501249375311,
+        "tokens": 1895
+      },
+      {
+        "best": {
+          "id": "c069fe97-1e92-42b6-a9eb-63be32b04c66",
+          "instruction": "{\n  \"instruction\": \"Classify physical common sense reasoning options, choosing the more practical one. Respond in JSON format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+        },
+        "score": 0.9997501249375311,
+        "tokens": 2036
+      },
+      {
+        "best": {
+          "id": "c069fe97-1e92-42b6-a9eb-63be32b04c66",
+          "instruction": "{\n  \"instruction\": \"Classify physical common sense reasoning options, choosing the more practical one. Respond in JSON format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+        },
+        "score": 0.9998333888703765,
+        "tokens": 2173
+      },
+      {
+        "best": {
+          "id": "c069fe97-1e92-42b6-a9eb-63be32b04c66",
+          "instruction": "{\n  \"instruction\": \"Classify physical common sense reasoning options, choosing the more practical one. Respond in JSON format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+        },
+        "score": 0.7499375156210948,
+        "tokens": 2287
+      },
+      {
+        "best": {
+          "id": "c069fe97-1e92-42b6-a9eb-63be32b04c66",
+          "instruction": "{\n  \"instruction\": \"Classify physical common sense reasoning options, choosing the more practical one. Respond in JSON format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+        },
+        "score": 0.7999400119976006,
+        "tokens": 2410
+      },
+      {
+        "best": {
+          "id": "c069fe97-1e92-42b6-a9eb-63be32b04c66",
+          "instruction": "{\n  \"instruction\": \"Classify physical common sense reasoning options, choosing the more practical one. Respond in JSON format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+        },
+        "score": 0.6666388935177471,
+        "tokens": 2529
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.6666111296234588,
+        "tokens": 2651
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.7499375156210948,
+        "tokens": 2838
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.7499375156210948,
+        "tokens": 2981
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.7999400119976006,
+        "tokens": 3098
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.7999400119976006,
+        "tokens": 3228
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.7999400119976006,
+        "tokens": 3388
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.7999400119976006,
+        "tokens": 3617
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.8332777870354942,
+        "tokens": 3785
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.8332777870354942,
+        "tokens": 3958
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.8570918440222826,
+        "tokens": 4075
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.8570918440222826,
+        "tokens": 4206
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.8749531308586427,
+        "tokens": 4333
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.8749531308586427,
+        "tokens": 4461
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.8749531308586427,
+        "tokens": 4577
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.8749531308586427,
+        "tokens": 4743
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.8888456838129096,
+        "tokens": 4870
+      },
+      {
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        },
+        "score": 0.8888456838129096,
+        "tokens": 5005
+      }
+    ],
+    "best": {
+      "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+      "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+    }
+  }
+}

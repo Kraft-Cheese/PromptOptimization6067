@@ -1,0 +1,1100 @@
+{
+  "config": {
+    "provider": "ollama",
+    "model": "qwen3:8b",
+    "budget": 5000,
+    "numExamples": 30,
+    "apeParaphrases": 5,
+    "evoExtraArms": 3,
+    "useDummyEval": false,
+    "useCache": false,
+    "cacheDir": "./cache"
+  },
+  "timestamp": "2025-11-04T18:38:27.068Z",
+  "results": [
+    {
+      "dataset": "piqa",
+      "numExamples": 30,
+      "baseInstruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}.",
+      "config": {
+        "provider": "ollama",
+        "model": "qwen3:8b",
+        "budget": 5000,
+        "useDummyEval": false
+      },
+      "ape": {
+        "bestPrompts": [
+          {
+            "best": {
+              "id": "f45558a8-e1a4-495d-b7b3-a583097823bb",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.7333333333333333,
+            "tokens": 27192
+          }
+        ],
+        "best": {
+          "id": "f45558a8-e1a4-495d-b7b3-a583097823bb",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        }
+      },
+      "evo": {
+        "bestPrompts": [
+          {
+            "best": {
+              "id": "8cca7184-acea-4071-98d8-068df035645f",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.7333333333333333,
+            "tokens": 4543
+          }
+        ],
+        "best": {
+          "id": "8cca7184-acea-4071-98d8-068df035645f",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        }
+      },
+      "ts": {
+        "bestPrompts": [
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.5,
+            "tokens": 527
+          },
+          {
+            "best": {
+              "id": "113094ff-0cd1-43f9-b4f9-8b1841788581",
+              "instruction": "{\n  \"instruction\": \"Classify physical commonsense reasoning solutions as either A or B, choosing the more practical one. Return ONLY valid JSON: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+            },
+            "score": 0.9995004995004996,
+            "tokens": 693
+          },
+          {
+            "best": {
+              "id": "113094ff-0cd1-43f9-b4f9-8b1841788581",
+              "instruction": "{\n  \"instruction\": \"Classify physical commonsense reasoning solutions as either A or B, choosing the more practical one. Return ONLY valid JSON: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+            },
+            "score": 0.5,
+            "tokens": 821
+          },
+          {
+            "best": {
+              "id": "65e396a3-018d-46e7-a8f7-dc3bcc77d295",
+              "instruction": "{\n  \"instruction\": \"Classify physical commonsense reasoning solutions as A or B, choosing the more practical one. Response format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+            },
+            "score": 0.9995004995004996,
+            "tokens": 1041
+          },
+          {
+            "best": {
+              "id": "65e396a3-018d-46e7-a8f7-dc3bcc77d295",
+              "instruction": "{\n  \"instruction\": \"Classify physical commonsense reasoning solutions as A or B, choosing the more practical one. Response format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+            },
+            "score": 0.9995004995004996,
+            "tokens": 1170
+          },
+          {
+            "best": {
+              "id": "65e396a3-018d-46e7-a8f7-dc3bcc77d295",
+              "instruction": "{\n  \"instruction\": \"Classify physical commonsense reasoning solutions as A or B, choosing the more practical one. Response format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+            },
+            "score": 0.9995004995004996,
+            "tokens": 1287
+          },
+          {
+            "best": {
+              "id": "65e396a3-018d-46e7-a8f7-dc3bcc77d295",
+              "instruction": "{\n  \"instruction\": \"Classify physical commonsense reasoning solutions as A or B, choosing the more practical one. Response format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+            },
+            "score": 0.9995004995004996,
+            "tokens": 1389
+          },
+          {
+            "best": {
+              "id": "c069fe97-1e92-42b6-a9eb-63be32b04c66",
+              "instruction": "{\n  \"instruction\": \"Classify physical common sense reasoning options, choosing the more practical one. Respond in JSON format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+            },
+            "score": 0.9997501249375311,
+            "tokens": 1538
+          },
+          {
+            "best": {
+              "id": "c069fe97-1e92-42b6-a9eb-63be32b04c66",
+              "instruction": "{\n  \"instruction\": \"Classify physical common sense reasoning options, choosing the more practical one. Respond in JSON format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+            },
+            "score": 0.9997501249375311,
+            "tokens": 1759
+          },
+          {
+            "best": {
+              "id": "c069fe97-1e92-42b6-a9eb-63be32b04c66",
+              "instruction": "{\n  \"instruction\": \"Classify physical common sense reasoning options, choosing the more practical one. Respond in JSON format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+            },
+            "score": 0.9997501249375311,
+            "tokens": 1895
+          },
+          {
+            "best": {
+              "id": "c069fe97-1e92-42b6-a9eb-63be32b04c66",
+              "instruction": "{\n  \"instruction\": \"Classify physical common sense reasoning options, choosing the more practical one. Respond in JSON format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+            },
+            "score": 0.9997501249375311,
+            "tokens": 2036
+          },
+          {
+            "best": {
+              "id": "c069fe97-1e92-42b6-a9eb-63be32b04c66",
+              "instruction": "{\n  \"instruction\": \"Classify physical common sense reasoning options, choosing the more practical one. Respond in JSON format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+            },
+            "score": 0.9998333888703765,
+            "tokens": 2173
+          },
+          {
+            "best": {
+              "id": "c069fe97-1e92-42b6-a9eb-63be32b04c66",
+              "instruction": "{\n  \"instruction\": \"Classify physical common sense reasoning options, choosing the more practical one. Respond in JSON format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+            },
+            "score": 0.7499375156210948,
+            "tokens": 2287
+          },
+          {
+            "best": {
+              "id": "c069fe97-1e92-42b6-a9eb-63be32b04c66",
+              "instruction": "{\n  \"instruction\": \"Classify physical common sense reasoning options, choosing the more practical one. Respond in JSON format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+            },
+            "score": 0.7999400119976006,
+            "tokens": 2410
+          },
+          {
+            "best": {
+              "id": "c069fe97-1e92-42b6-a9eb-63be32b04c66",
+              "instruction": "{\n  \"instruction\": \"Classify physical common sense reasoning options, choosing the more practical one. Respond in JSON format: {\\\"label\\\": \\\"A\\\"} or {\\\"label\\\": \\\"B\\\"}\"\n}"
+            },
+            "score": 0.6666388935177471,
+            "tokens": 2529
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.6666111296234588,
+            "tokens": 2651
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.7499375156210948,
+            "tokens": 2838
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.7499375156210948,
+            "tokens": 2981
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.7999400119976006,
+            "tokens": 3098
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.7999400119976006,
+            "tokens": 3228
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.7999400119976006,
+            "tokens": 3388
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.7999400119976006,
+            "tokens": 3617
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.8332777870354942,
+            "tokens": 3785
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.8332777870354942,
+            "tokens": 3958
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.8570918440222826,
+            "tokens": 4075
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.8570918440222826,
+            "tokens": 4206
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.8749531308586427,
+            "tokens": 4333
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.8749531308586427,
+            "tokens": 4461
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.8749531308586427,
+            "tokens": 4577
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.8749531308586427,
+            "tokens": 4743
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.8888456838129096,
+            "tokens": 4870
+          },
+          {
+            "best": {
+              "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+              "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+            },
+            "score": 0.8888456838129096,
+            "tokens": 5005
+          }
+        ],
+        "best": {
+          "id": "8df8cea1-9c31-41df-85cb-2ad9fdfc5956",
+          "instruction": "You are a classifier for physical commonsense reasoning. Analyze both options carefully and choose the more practical solution. Return ONLY valid JSON: {\"label\": \"A\"} or {\"label\": \"B\"}."
+        }
+      }
+    },
+    {
+      "dataset": "hellaswag",
+      "numExamples": 30,
+      "baseInstruction": "You are a commonsense reasoning classifier. Read the context and determine which ending makes most sense. Return ONLY valid JSON: {\"label\": \"A|B|C|D\"}.",
+      "config": {
+        "provider": "ollama",
+        "model": "qwen3:8b",
+        "budget": 5000,
+        "useDummyEval": false
+      },
+      "ape": {
+        "bestPrompts": [
+          {
+            "best": {
+              "id": "0534f0b5-5976-4e93-9ad1-703115b48b2e",
+              "instruction": "{\"instruction\": \"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+            },
+            "score": 0.5333333333333333,
+            "tokens": 31990
+          }
+        ],
+        "best": {
+          "id": "0534f0b5-5976-4e93-9ad1-703115b48b2e",
+          "instruction": "{\"instruction\": \"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+        }
+      },
+      "evo": {
+        "bestPrompts": [
+          {
+            "best": {
+              "id": "8b02ba30-e589-47d1-93cb-530718a43067",
+              "instruction": "You are a commonsense reasoning classifier. Read the context and determine which ending makes most sense. Return ONLY valid JSON: {\"label\": \"A|B|C|D\"}."
+            },
+            "score": 0.4666666666666667,
+            "tokens": 5049
+          }
+        ],
+        "best": {
+          "id": "8b02ba30-e589-47d1-93cb-530718a43067",
+          "instruction": "You are a commonsense reasoning classifier. Read the context and determine which ending makes most sense. Return ONLY valid JSON: {\"label\": \"A|B|C|D\"}."
+        }
+      },
+      "ts": {
+        "bestPrompts": [
+          {
+            "best": {
+              "id": "1c6ab46d-3e9e-4c55-a956-e4946f3a199f",
+              "instruction": "You are a commonsense reasoning classifier. Read the context and determine which ending makes most sense. Return ONLY valid JSON: {\"label\": \"A|B|C|D\"}."
+            },
+            "score": 0.5,
+            "tokens": 460
+          },
+          {
+            "best": {
+              "id": "1c6ab46d-3e9e-4c55-a956-e4946f3a199f",
+              "instruction": "You are a commonsense reasoning classifier. Read the context and determine which ending makes most sense. Return ONLY valid JSON: {\"label\": \"A|B|C|D\"}."
+            },
+            "score": 0.5,
+            "tokens": 630
+          },
+          {
+            "best": {
+              "id": "1c6ab46d-3e9e-4c55-a956-e4946f3a199f",
+              "instruction": "You are a commonsense reasoning classifier. Read the context and determine which ending makes most sense. Return ONLY valid JSON: {\"label\": \"A|B|C|D\"}."
+            },
+            "score": 0.5,
+            "tokens": 841
+          },
+          {
+            "best": {
+              "id": "8e1542cc-3e0b-4eeb-a2c7-304010f96ad5",
+              "instruction": "{\"instruction\":\"Classify the given context by choosing the most sensible ending among options A, B, C, or D. Return only valid JSON: {\\\"label\\\": \\\"A|B|C|D\\\"}.\"}"
+            },
+            "score": 0.5,
+            "tokens": 1015
+          },
+          {
+            "best": {
+              "id": "8e1542cc-3e0b-4eeb-a2c7-304010f96ad5",
+              "instruction": "{\"instruction\":\"Classify the given context by choosing the most sensible ending among options A, B, C, or D. Return only valid JSON: {\\\"label\\\": \\\"A|B|C|D\\\"}.\"}"
+            },
+            "score": 0.0004995004995004996,
+            "tokens": 1192
+          },
+          {
+            "best": {
+              "id": "8e1542cc-3e0b-4eeb-a2c7-304010f96ad5",
+              "instruction": "{\"instruction\":\"Classify the given context by choosing the most sensible ending among options A, B, C, or D. Return only valid JSON: {\\\"label\\\": \\\"A|B|C|D\\\"}.\"}"
+            },
+            "score": 0.0004995004995004996,
+            "tokens": 1335
+          },
+          {
+            "best": {
+              "id": "8e1542cc-3e0b-4eeb-a2c7-304010f96ad5",
+              "instruction": "{\"instruction\":\"Classify the given context by choosing the most sensible ending among options A, B, C, or D. Return only valid JSON: {\\\"label\\\": \\\"A|B|C|D\\\"}.\"}"
+            },
+            "score": 0.0004995004995004996,
+            "tokens": 1523
+          },
+          {
+            "best": {
+              "id": "8e1542cc-3e0b-4eeb-a2c7-304010f96ad5",
+              "instruction": "{\"instruction\":\"Classify the given context by choosing the most sensible ending among options A, B, C, or D. Return only valid JSON: {\\\"label\\\": \\\"A|B|C|D\\\"}.\"}"
+            },
+            "score": 0.0004995004995004996,
+            "tokens": 1781
+          },
+          {
+            "best": {
+              "id": "8e1542cc-3e0b-4eeb-a2c7-304010f96ad5",
+              "instruction": "{\"instruction\":\"Classify the given context by choosing the most sensible ending among options A, B, C, or D. Return only valid JSON: {\\\"label\\\": \\\"A|B|C|D\\\"}.\"}"
+            },
+            "score": 0.0004995004995004996,
+            "tokens": 1990
+          },
+          {
+            "best": {
+              "id": "8e1542cc-3e0b-4eeb-a2c7-304010f96ad5",
+              "instruction": "{\"instruction\":\"Classify the given context by choosing the most sensible ending among options A, B, C, or D. Return only valid JSON: {\\\"label\\\": \\\"A|B|C|D\\\"}.\"}"
+            },
+            "score": 0.0004995004995004996,
+            "tokens": 2256
+          },
+          {
+            "best": {
+              "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+              "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+            },
+            "score": 0.33338887037654114,
+            "tokens": 2394
+          },
+          {
+            "best": {
+              "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+              "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+            },
+            "score": 0.25006248437890527,
+            "tokens": 2717
+          },
+          {
+            "best": {
+              "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+              "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+            },
+            "score": 0.25006248437890527,
+            "tokens": 2976
+          },
+          {
+            "best": {
+              "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+              "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+            },
+            "score": 0.25006248437890527,
+            "tokens": 3138
+          },
+          {
+            "best": {
+              "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+              "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+            },
+            "score": 0.40001999600079985,
+            "tokens": 3259
+          },
+          {
+            "best": {
+              "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+              "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+            },
+            "score": 0.40001999600079985,
+            "tokens": 3424
+          },
+          {
+            "best": {
+              "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+              "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+            },
+            "score": 0.40001999600079985,
+            "tokens": 3595
+          },
+          {
+            "best": {
+              "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+              "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+            },
+            "score": 0.40001999600079985,
+            "tokens": 3788
+          },
+          {
+            "best": {
+              "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+              "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+            },
+            "score": 0.40001999600079985,
+            "tokens": 3975
+          },
+          {
+            "best": {
+              "id": "532a98c3-0d7f-4603-bae0-b2ec8194bfb4",
+              "instruction": "{\"instruction\":\"Classify the given context as A, B, C or D based on common sense reasoning.\"}"
+            },
+            "score": 0.40001999600079985,
+            "tokens": 4098
+          },
+          {
+            "best": {
+              "id": "59966ac8-a4e2-4098-86c2-e629212b5d48",
+              "instruction": "{\"instruction\":\"Classify the given context as A, B, C, or D based on commonsense reasoning.\"}"
+            },
+            "score": 0.4285816311955435,
+            "tokens": 4221
+          },
+          {
+            "best": {
+              "id": "59966ac8-a4e2-4098-86c2-e629212b5d48",
+              "instruction": "{\"instruction\":\"Classify the given context as A, B, C, or D based on commonsense reasoning.\"}"
+            },
+            "score": 0.4285816311955435,
+            "tokens": 4348
+          },
+          {
+            "best": {
+              "id": "59966ac8-a4e2-4098-86c2-e629212b5d48",
+              "instruction": "{\"instruction\":\"Classify the given context as A, B, C, or D based on commonsense reasoning.\"}"
+            },
+            "score": 0.5,
+            "tokens": 4488
+          },
+          {
+            "best": {
+              "id": "59966ac8-a4e2-4098-86c2-e629212b5d48",
+              "instruction": "{\"instruction\":\"Classify the given context as A, B, C, or D based on commonsense reasoning.\"}"
+            },
+            "score": 0.44445061659815577,
+            "tokens": 4722
+          },
+          {
+            "best": {
+              "id": "59966ac8-a4e2-4098-86c2-e629212b5d48",
+              "instruction": "{\"instruction\":\"Classify the given context as A, B, C, or D based on commonsense reasoning.\"}"
+            },
+            "score": 0.44445061659815577,
+            "tokens": 4910
+          },
+          {
+            "best": {
+              "id": "59966ac8-a4e2-4098-86c2-e629212b5d48",
+              "instruction": "{\"instruction\":\"Classify the given context as A, B, C, or D based on commonsense reasoning.\"}"
+            },
+            "score": 0.5,
+            "tokens": 5033
+          }
+        ],
+        "best": {
+          "id": "59966ac8-a4e2-4098-86c2-e629212b5d48",
+          "instruction": "{\"instruction\":\"Classify the given context as A, B, C, or D based on commonsense reasoning.\"}"
+        }
+      }
+    },
+    {
+      "dataset": "boolq",
+      "numExamples": 30,
+      "baseInstruction": "You are a reading comprehension system. Read the passage and answer the question truthfully. Return ONLY valid JSON: {\"answer\": \"yes\"} or {\"answer\": \"no\"}.",
+      "config": {
+        "provider": "ollama",
+        "model": "qwen3:8b",
+        "budget": 5000,
+        "useDummyEval": false
+      },
+      "ape": {
+        "bestPrompts": [
+          {
+            "best": {
+              "id": "2288ba1f-83b6-4bf5-a5f3-28c4bb726a33",
+              "instruction": "You are a reading comprehension system. Read the passage and answer the question truthfully. Return ONLY valid JSON: {\"answer\": \"yes\"} or {\"answer\": \"no\"}."
+            },
+            "score": 0.7333333333333333,
+            "tokens": 42150
+          }
+        ],
+        "best": {
+          "id": "2288ba1f-83b6-4bf5-a5f3-28c4bb726a33",
+          "instruction": "You are a reading comprehension system. Read the passage and answer the question truthfully. Return ONLY valid JSON: {\"answer\": \"yes\"} or {\"answer\": \"no\"}."
+        }
+      },
+      "evo": {
+        "bestPrompts": [
+          {
+            "best": {
+              "id": "8f4af1bf-0aca-40b8-8585-fd23b4f47e1e",
+              "instruction": "You are a reading comprehension system. Read the passage and answer the question truthfully. Return ONLY valid JSON: {\"answer\": \"yes\"} or {\"answer\": \"no\"}."
+            },
+            "score": 0.5333333333333333,
+            "tokens": 5142
+          }
+        ],
+        "best": {
+          "id": "8f4af1bf-0aca-40b8-8585-fd23b4f47e1e",
+          "instruction": "You are a reading comprehension system. Read the passage and answer the question truthfully. Return ONLY valid JSON: {\"answer\": \"yes\"} or {\"answer\": \"no\"}."
+        }
+      },
+      "ts": {
+        "bestPrompts": [
+          {
+            "best": {
+              "id": "32b4f4a6-82ff-469a-b14d-b9444e6daf40",
+              "instruction": "You are a reading comprehension system. Read the passage and answer the question truthfully. Return ONLY valid JSON: {\"answer\": \"yes\"} or {\"answer\": \"no\"}."
+            },
+            "score": 0.5,
+            "tokens": 490
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9995004995004996,
+            "tokens": 719
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9995004995004996,
+            "tokens": 915
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9997501249375311,
+            "tokens": 1107
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9997501249375311,
+            "tokens": 1371
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9998333888703765,
+            "tokens": 1600
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9998333888703765,
+            "tokens": 1852
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9998750312421896,
+            "tokens": 2058
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9998750312421896,
+            "tokens": 2263
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9998750312421896,
+            "tokens": 2459
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9998750312421896,
+            "tokens": 2619
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9998750312421896,
+            "tokens": 2891
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9999000199960009,
+            "tokens": 3118
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9999000199960009,
+            "tokens": 3336
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9999000199960009,
+            "tokens": 3535
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9999166805532411,
+            "tokens": 3764
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9999166805532411,
+            "tokens": 3866
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9999166805532411,
+            "tokens": 4181
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9999166805532411,
+            "tokens": 4471
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9999285816311956,
+            "tokens": 4677
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9999285816311956,
+            "tokens": 4992
+          },
+          {
+            "best": {
+              "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+              "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+            },
+            "score": 0.9999285816311956,
+            "tokens": 5155
+          }
+        ],
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        }
+      }
+    },
+    {
+      "dataset": "gsm8k",
+      "numExamples": 20,
+      "baseInstruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}.",
+      "config": {
+        "provider": "ollama",
+        "model": "qwen3:8b",
+        "budget": 5000,
+        "useDummyEval": false
+      },
+      "ape": {
+        "bestPrompts": [
+          {
+            "best": {
+              "id": "fce0c00a-d692-4da8-9599-d05bfc86cd5d",
+              "instruction": "{\"instruction\": \"Solve mathematical problems, provide answer and optional reasoning in JSON format.\"}"
+            },
+            "score": 0.25,
+            "tokens": 16339
+          }
+        ],
+        "best": {
+          "id": "fce0c00a-d692-4da8-9599-d05bfc86cd5d",
+          "instruction": "{\"instruction\": \"Solve mathematical problems, provide answer and optional reasoning in JSON format.\"}"
+        }
+      },
+      "evo": {
+        "bestPrompts": [
+          {
+            "best": {
+              "id": "158e89b4-f2a2-4b57-8b62-6d06aaf28e3b",
+              "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+            },
+            "score": 0.2,
+            "tokens": 2658
+          }
+        ],
+        "best": {
+          "id": "158e89b4-f2a2-4b57-8b62-6d06aaf28e3b",
+          "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+        }
+      },
+      "ts": {
+        "bestPrompts": [
+          {
+            "best": {
+              "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+              "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+            },
+            "score": 0.5,
+            "tokens": 475
+          },
+          {
+            "best": {
+              "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+              "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+            },
+            "score": 0.5,
+            "tokens": 746
+          },
+          {
+            "best": {
+              "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+              "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+            },
+            "score": 0.5,
+            "tokens": 1012
+          },
+          {
+            "best": {
+              "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+              "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+            },
+            "score": 0.5,
+            "tokens": 1188
+          },
+          {
+            "best": {
+              "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+              "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+            },
+            "score": 0.5,
+            "tokens": 1327
+          },
+          {
+            "best": {
+              "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+              "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+            },
+            "score": 0.5,
+            "tokens": 1434
+          },
+          {
+            "best": {
+              "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+              "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+            },
+            "score": 0.0004995004995004996,
+            "tokens": 1564
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.5,
+            "tokens": 1759
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.5,
+            "tokens": 1886
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.5,
+            "tokens": 2005
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.5,
+            "tokens": 2139
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.5,
+            "tokens": 2232
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.5,
+            "tokens": 2568
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.5,
+            "tokens": 2697
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.6666111296234588,
+            "tokens": 2888
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.5,
+            "tokens": 3022
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.5,
+            "tokens": 3296
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.5,
+            "tokens": 3428
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.40001999600079985,
+            "tokens": 3564
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.40001999600079985,
+            "tokens": 3666
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.40001999600079985,
+            "tokens": 3779
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.40001999600079985,
+            "tokens": 3881
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.3333611064822529,
+            "tokens": 4064
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.3333611064822529,
+            "tokens": 4250
+          },
+          {
+            "best": {
+              "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+              "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+            },
+            "score": 0.28574489358663047,
+            "tokens": 4380
+          },
+          {
+            "best": {
+              "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+              "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+            },
+            "score": 0.28574489358663047,
+            "tokens": 4525
+          },
+          {
+            "best": {
+              "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+              "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+            },
+            "score": 0.28574489358663047,
+            "tokens": 4701
+          },
+          {
+            "best": {
+              "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+              "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+            },
+            "score": 0.2500312460942382,
+            "tokens": 4794
+          },
+          {
+            "best": {
+              "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+              "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+            },
+            "score": 0.2500312460942382,
+            "tokens": 4921
+          },
+          {
+            "best": {
+              "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+              "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+            },
+            "score": 0.2500312460942382,
+            "tokens": 5060
+          }
+        ],
+        "best": {
+          "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+          "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+        }
+      }
+    }
+  ]
+}

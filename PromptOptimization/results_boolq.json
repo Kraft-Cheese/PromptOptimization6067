@@ -1,0 +1,227 @@
+{
+  "dataset": "boolq",
+  "numExamples": 30,
+  "baseInstruction": "You are a reading comprehension system. Read the passage and answer the question truthfully. Return ONLY valid JSON: {\"answer\": \"yes\"} or {\"answer\": \"no\"}.",
+  "config": {
+    "provider": "ollama",
+    "model": "qwen3:8b",
+    "budget": 5000,
+    "useDummyEval": false
+  },
+  "ape": {
+    "bestPrompts": [
+      {
+        "best": {
+          "id": "2288ba1f-83b6-4bf5-a5f3-28c4bb726a33",
+          "instruction": "You are a reading comprehension system. Read the passage and answer the question truthfully. Return ONLY valid JSON: {\"answer\": \"yes\"} or {\"answer\": \"no\"}."
+        },
+        "score": 0.7333333333333333,
+        "tokens": 42150
+      }
+    ],
+    "best": {
+      "id": "2288ba1f-83b6-4bf5-a5f3-28c4bb726a33",
+      "instruction": "You are a reading comprehension system. Read the passage and answer the question truthfully. Return ONLY valid JSON: {\"answer\": \"yes\"} or {\"answer\": \"no\"}."
+    }
+  },
+  "evo": {
+    "bestPrompts": [
+      {
+        "best": {
+          "id": "8f4af1bf-0aca-40b8-8585-fd23b4f47e1e",
+          "instruction": "You are a reading comprehension system. Read the passage and answer the question truthfully. Return ONLY valid JSON: {\"answer\": \"yes\"} or {\"answer\": \"no\"}."
+        },
+        "score": 0.5333333333333333,
+        "tokens": 5142
+      }
+    ],
+    "best": {
+      "id": "8f4af1bf-0aca-40b8-8585-fd23b4f47e1e",
+      "instruction": "You are a reading comprehension system. Read the passage and answer the question truthfully. Return ONLY valid JSON: {\"answer\": \"yes\"} or {\"answer\": \"no\"}."
+    }
+  },
+  "ts": {
+    "bestPrompts": [
+      {
+        "best": {
+          "id": "32b4f4a6-82ff-469a-b14d-b9444e6daf40",
+          "instruction": "You are a reading comprehension system. Read the passage and answer the question truthfully. Return ONLY valid JSON: {\"answer\": \"yes\"} or {\"answer\": \"no\"}."
+        },
+        "score": 0.5,
+        "tokens": 490
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9995004995004996,
+        "tokens": 719
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9995004995004996,
+        "tokens": 915
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9997501249375311,
+        "tokens": 1107
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9997501249375311,
+        "tokens": 1371
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9998333888703765,
+        "tokens": 1600
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9998333888703765,
+        "tokens": 1852
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9998750312421896,
+        "tokens": 2058
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9998750312421896,
+        "tokens": 2263
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9998750312421896,
+        "tokens": 2459
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9998750312421896,
+        "tokens": 2619
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9998750312421896,
+        "tokens": 2891
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9999000199960009,
+        "tokens": 3118
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9999000199960009,
+        "tokens": 3336
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9999000199960009,
+        "tokens": 3535
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9999166805532411,
+        "tokens": 3764
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9999166805532411,
+        "tokens": 3866
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9999166805532411,
+        "tokens": 4181
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9999166805532411,
+        "tokens": 4471
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9999285816311956,
+        "tokens": 4677
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9999285816311956,
+        "tokens": 4992
+      },
+      {
+        "best": {
+          "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+          "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+        },
+        "score": 0.9999285816311956,
+        "tokens": 5155
+      }
+    ],
+    "best": {
+      "id": "b70c5fc0-5182-4f57-9bc7-d0b49799765a",
+      "instruction": "{\n  \"instruction\": \"Given a text, determine if it answers the question truthfully and return JSON: {\\\"answer\\\": \\\"yes\\\"} or {\\\"answer\\\": \\\"no\\\"}\"\n}"
+    }
+  }
+}

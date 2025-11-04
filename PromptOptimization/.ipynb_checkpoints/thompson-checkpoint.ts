@@ -6,7 +6,7 @@
 // More we see a prompt, better we know its distribution (less variance)
 
 import { z } from "npm:zod";
-import { chatText, LLMConfig } from "./callOllama.ts";
+import { chatJSON, LLMConfig } from "./callOllama.ts";
 // import { LLM } from "@langchain/core/language_models/llms";
 // import { LLMChain } from "langchain/chains";
 // import { LLMChainExtractor } from "langchain/retrievers/document_compressors/chain_extract";
@@ -51,16 +51,17 @@ export async function mutateOnce(
     `GUIDANCE: ${guidance}\n` +
     `Rewrite the instruction below. Keep the same JSON schema.\n---\n${parent}\n---\n` +
     `Return JSON: {"instruction":"<rewritten>"}`;
-  const { response, tokens } = await chatText(
+  const { data, tokens } = await chatJSON(
     config,
     [
       { role: "system", content: system },
       { role: "user", content: user },
-    ]
+    ],
+    MutSchema
   );
-  const instruction = response.trim() || parent;
+  const out = data?.instruction?.trim() || parent;
   meter.add(tokens ?? 0);
-  return { instruction, tokens: tokens ?? 0 };
+  return { instruction: out, tokens: tokens ?? 0 };
 }
 
 // Normal Inverse Gamma = mean, variance prior/posterior

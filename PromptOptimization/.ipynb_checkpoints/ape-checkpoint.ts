@@ -1,8 +1,7 @@
 // LLM-based paraphrasing of the instruction
 
 import { z } from "npm:zod";
-import { chatText, LLMConfig } from "./callOllama.ts";
-import { LLM } from "@langchain/core/language_models/llms";
+import { chatJSON } from "./callOllama.ts";
 
 // prompt is id + the prompt's text
 export type Prompt = { id: string; instruction: string };
@@ -16,7 +15,7 @@ export type EvalExample<E> = (
   ex: E
 ) => Promise<{ score: number; tokens: number }>;
 
-// Track tokens used for budget
+// Track tokens used for budget 
 export class TokenMeter {
   total = 0;
   add(n: number) { this.total += Math.max(0, n|0); }
@@ -36,7 +35,7 @@ const ParaphraseSchema = z.object({
  * Counts tokens used by the paraphrasing call
  */
 export async function paraphraseInstruction(
-  config: LLMConfig,
+  model: string,
   base: string,
   meter: TokenMeter,
   style = "Be concise. Keep the same schema. Emphasize: return ONLY valid JSON."
@@ -48,36 +47,36 @@ export async function paraphraseInstruction(
     `STYLE: ${style}\n\n---\n${base}\n---\n` +
     `Return JSON: {"instruction": "<rewritten>"} (no extra fields).`;
 
-  const { response, tokens } = await chatText(
-    config,
+  const { data, tokens } = await chatJSON(
+    model,
     [
       { role: "system", content: system },
       { role: "user", content: user },
     ],
+    ParaphraseSchema
   );
 
-  const rewritten = response.trim() || base;
-
+  const rewritten = data?.instruction?.trim() || base;
   meter.add(tokens ?? 0);
   return { instruction: rewritten, tokens: tokens ?? 0 };
 }
 
 export type APEOptions<E> = {
-  config: LLMConfig; // LLM config for paraphrasing
+  model: string;
   baseInstruction: string; // starting instruction to paraphrase
   N: number; // number of paraphrases to try
-  data: E[]; // data is the eval examples for: PIQA, HellaSwag, BoolQ, GSM8K
+  data: E[]; // data is the eval examples for: PIQA, HellaSwag, BoolQ, GSM8K      
   evalExample: EvalExample<E>; // evaluator function for the dataset
 };
 
 export async function apeOptimize<E>(opts: APEOptions<E>) {
-  const { config, baseInstruction, N, data, evalExample } = opts;
+  const { model, baseInstruction, N, data, evalExample } = opts;
   const meter = new TokenMeter();
 
   // Create candidates: base + N paraphrases and set uuids + track total tokens (max per prompt is 128)
   const candidates: Prompt[] = [{ id: uuid(), instruction: baseInstruction }];
   for (let i = 0; i < N; i++) {
-    const { instruction } = await paraphraseInstruction(config, baseInstruction, meter);
+    const { instruction } = await paraphraseInstruction(model, baseInstruction, meter);
     candidates.push({ id: uuid(), instruction });
   }
 
@@ -96,12 +95,12 @@ export async function apeOptimize<E>(opts: APEOptions<E>) {
       sum += score;
     }
     const avg = sum / Math.max(1, data.length); // average score over examples
-    if (avg > bestScore) {
+    if (avg > bestScore) { 
       best = p; bestScore = avg; // update best prompt if improved
     }
   }
 
-  // Return best prompt, its score, and token usage
+  // Return best prompt, its score, and token usage history
   const bestPrompts: BestPrompt[] = [{ best, score: bestScore, tokens: meter.snapshot() }];
   return { best, bestPrompts, meter };
 }

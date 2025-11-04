@@ -1,0 +1,291 @@
+{
+  "dataset": "gsm8k",
+  "numExamples": 20,
+  "baseInstruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}.",
+  "config": {
+    "provider": "ollama",
+    "model": "qwen3:8b",
+    "budget": 5000,
+    "useDummyEval": false
+  },
+  "ape": {
+    "bestPrompts": [
+      {
+        "best": {
+          "id": "fce0c00a-d692-4da8-9599-d05bfc86cd5d",
+          "instruction": "{\"instruction\": \"Solve mathematical problems, provide answer and optional reasoning in JSON format.\"}"
+        },
+        "score": 0.25,
+        "tokens": 16339
+      }
+    ],
+    "best": {
+      "id": "fce0c00a-d692-4da8-9599-d05bfc86cd5d",
+      "instruction": "{\"instruction\": \"Solve mathematical problems, provide answer and optional reasoning in JSON format.\"}"
+    }
+  },
+  "evo": {
+    "bestPrompts": [
+      {
+        "best": {
+          "id": "158e89b4-f2a2-4b57-8b62-6d06aaf28e3b",
+          "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+        },
+        "score": 0.2,
+        "tokens": 2658
+      }
+    ],
+    "best": {
+      "id": "158e89b4-f2a2-4b57-8b62-6d06aaf28e3b",
+      "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+    }
+  },
+  "ts": {
+    "bestPrompts": [
+      {
+        "best": {
+          "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+          "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+        },
+        "score": 0.5,
+        "tokens": 475
+      },
+      {
+        "best": {
+          "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+          "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+        },
+        "score": 0.5,
+        "tokens": 746
+      },
+      {
+        "best": {
+          "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+          "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+        },
+        "score": 0.5,
+        "tokens": 1012
+      },
+      {
+        "best": {
+          "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+          "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+        },
+        "score": 0.5,
+        "tokens": 1188
+      },
+      {
+        "best": {
+          "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+          "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+        },
+        "score": 0.5,
+        "tokens": 1327
+      },
+      {
+        "best": {
+          "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+          "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+        },
+        "score": 0.5,
+        "tokens": 1434
+      },
+      {
+        "best": {
+          "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+          "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+        },
+        "score": 0.0004995004995004996,
+        "tokens": 1564
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.5,
+        "tokens": 1759
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.5,
+        "tokens": 1886
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.5,
+        "tokens": 2005
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.5,
+        "tokens": 2139
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.5,
+        "tokens": 2232
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.5,
+        "tokens": 2568
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.5,
+        "tokens": 2697
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.6666111296234588,
+        "tokens": 2888
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.5,
+        "tokens": 3022
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.5,
+        "tokens": 3296
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.5,
+        "tokens": 3428
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.40001999600079985,
+        "tokens": 3564
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.40001999600079985,
+        "tokens": 3666
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.40001999600079985,
+        "tokens": 3779
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.40001999600079985,
+        "tokens": 3881
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.3333611064822529,
+        "tokens": 4064
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.3333611064822529,
+        "tokens": 4250
+      },
+      {
+        "best": {
+          "id": "a26ef6ea-4497-4b7d-afab-23eb54869aab",
+          "instruction": "{\n  \"instruction\": \"Solve mathematical problems, providing steps and results in the following format: {\\\"answer\\\": <number>, \\\"steps\\\":[<step1>, <step2>, ...]}\"\n}"
+        },
+        "score": 0.28574489358663047,
+        "tokens": 4380
+      },
+      {
+        "best": {
+          "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+          "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+        },
+        "score": 0.28574489358663047,
+        "tokens": 4525
+      },
+      {
+        "best": {
+          "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+          "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+        },
+        "score": 0.28574489358663047,
+        "tokens": 4701
+      },
+      {
+        "best": {
+          "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+          "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+        },
+        "score": 0.2500312460942382,
+        "tokens": 4794
+      },
+      {
+        "best": {
+          "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+          "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+        },
+        "score": 0.2500312460942382,
+        "tokens": 4921
+      },
+      {
+        "best": {
+          "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+          "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+        },
+        "score": 0.2500312460942382,
+        "tokens": 5060
+      }
+    ],
+    "best": {
+      "id": "f6435b32-78fd-4c14-af56-2d0fa10af896",
+      "instruction": "You are a math problem solver. Solve the problem step by step. Return ONLY valid JSON: {\"answer\": <number>, \"reasoning\": \"<optional>\"}."
+    }
+  }
+}

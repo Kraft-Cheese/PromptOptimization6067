@@ -16,6 +16,37 @@ export interface LLMConfig {
   baseURL?: string; // endpoints
 }
 
+export async function chatText(
+    config: LLMConfig,
+    messages: Msg[]
+  ): Promise<{ response: string; tokens: number }> {
+    if (config.provider === "ollama") {
+      const resp = await ollama.chat({
+        model: config.model,
+        messages,
+        stream: false,
+        options: { temperature: 0.2 },
+      });
+      const response = resp?.message?.content ?? "";
+      const tokens = (resp?.prompt_eval_count ?? 0) + (resp?.eval_count ?? 0) ||
+        Math.ceil((JSON.stringify(messages).length + response.length) / 4);
+      return { response, tokens };
+    } else if (config.provider === "openai") {
+      const openai = new OpenAI({
+        apiKey: config.apiKey,
+        baseURL: config.baseURL,
+      });
+      const resp = await openai.chat.completions.create({
+        model: config.model,
+        messages,
+        temperature: 0.2,
+      });
+      const response = resp.choices[0]?.message?.content ?? "";
+      const tokens = (resp.usage?.prompt_tokens ?? 0) + (resp.usage?.completion_tokens ?? 0);
+      return { response, tokens };
+    }
+    throw new Error(`Unsupported LLM provider: ${config.provider}`);
+  }
 
 export async function chatJSON<T>(
   config: LLMConfig,
